@@ -1,0 +1,83 @@
+{
+  "generated": "2026-07-02 17:35 CT",
+  "projects": [
+    {
+      "name": "Quiver",
+      "emoji": "🚁",
+      "lead": "Erick · Alperen",
+      "phase": "Devkit phase — customer flight prep",
+      "milestone": "First devkit flight — target Mon Jul 6",
+      "blocker": "GPS2 underperforming (replacement requested) · Remote ID operator-location warning (MK32 QGC incompatibility)",
+      "status": "active",
+      "updated": "2026-07-01"
+    },
+    {
+      "name": "Spearhead",
+      "emoji": "✈️",
+      "lead": "Alperen · Zeynep",
+      "phase": "PT1 build — structure + electrical",
+      "milestone": "Motors/ESCs/props clear customs ~Jul 17 → testing ~Jul 17–19",
+      "blocker": "Aero stability question (pusher-motor correction) unresolved",
+      "status": "active",
+      "updated": "2026-06-29"
+    },
+    {
+      "name": "Caribou",
+      "emoji": "🛗",
+      "lead": "Julius",
+      "phase": "Phase 1 — final month (July)",
+      "milestone": "PCBs ship ~mid-July → ground test, then tethered hover",
+      "blocker": "Test site not locked",
+      "status": "active",
+      "updated": "2026-06-30"
+    },
+    {
+      "name": "Longshot",
+      "emoji": "🔋",
+      "lead": "Julius",
+      "phase": "Design — custom 21700 pack",
+      "milestone": "14S10P RS50 pack (~2,520 Wh, ~9.8 kg cells)",
+      "blocker": "—",
+      "status": "active",
+      "updated": "2026-06-15"
+    },
+    {
+      "name": "Quiver Mini / Kestrel",
+      "emoji": "🐦",
+      "lead": "Julius (Kestrel)",
+      "phase": "Parked — Kestrel is the near-term small platform",
+      "milestone": "Upload Kestrel as reference build",
+      "blocker": "Clean-sheet Mini paused (May 21) pending bandwidth",
+      "status": "parked",
+      "updated": "2026-05-21"
+    }
+  ],
+  "actions": [
+    {"owner": "Erick", "item": "First devkit flight if log/param review is clean", "due": "Mon Jul 6", "where": "Quiver"},
+    {"owner": "Zeynep", "item": "Review Erick's ground-run logs + parameters", "due": "before Jul 6", "where": "Quiver"},
+    {"owner": "Thomas", "item": "Replacement GPS for Erick's devkit", "due": "asap", "where": "Quiver"},
+    {"owner": "Julius", "item": "Caribou PCB manufacturing + shipping", "due": "~mid-July", "where": "Caribou"},
+    {"owner": "Alperen", "item": "Plywood cutting + skin/tail work while motors in transit", "due": "July", "where": "Spearhead"},
+    {"owner": "Erick", "item": "Finish Spearhead wiring table", "due": "July", "where": "Spearhead"},
+    {"owner": "Erick + Thomas", "item": "Attachment-interface replacement sourcing (supplier link dead)", "due": "open", "where": "Quiver"},
+    {"owner": "Thomas", "item": "Granular dispenser wiring for Spike-granule tests", "due": "open", "where": "Javelina"}
+  ],
+  "governance": [
+    {"item": "No active Snapshot votes", "state": "quiet"},
+    {"item": "AIP-10 — Tokenomics (Erick)", "state": "draft"},
+    {"item": "Optimistic infra lane — challenge window view lands here", "state": "future"}
+  ],
+  "pulse": [
+    {"repo": "project-quiver", "pr": 225, "title": "feat: per-subassembly GLB export for the docs 3D viewer", "author": "thomasgarrison", "age": "21d"},
+    {"repo": "project-quiver", "pr": 223, "title": "Added fusion link to project readme and manufacturing guide", "author": "errrks", "age": "34d"},
+    {"repo": "project-quiver", "pr": 222, "title": "docs: add PWM MAD 4x08 parameter variant", "author": "vector-arrow", "age": "43d"},
+    {"repo": "project-spearhead", "pr": 26, "title": "Add realtime Flight Deck GUI", "author": "ZeynepB5793", "age": "15d"},
+    {"repo": "project-spearhead", "pr": 5, "title": "docs: add Spearhead intro page (draft)", "author": "vector-arrow", "age": "46d"}
+  ],
+  "calendar": [
+    {"when": "Thu (weekly)", "what": "Quiver call — Jul 2 skipped (Erick out)"},
+    {"when": "Mon Jul 6", "what": "Tentative: first devkit flight (Houston)"},
+    {"when": "~Jul 17–19", "what": "Turkey meetup / Spearhead testing window (shipment-dependent)"}
+  ],
+  "treasury": {"note": "On-chain treasury reads land in v2 · AIP-009 revenue counter once the store ships"}
+}
