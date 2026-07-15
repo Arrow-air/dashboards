@@ -1,83 +1,98 @@
 {
-  "generated": "2026-07-02 17:35 CT",
+  "generated": "2026-07-14 21:20 CT",
   "projects": [
     {
       "name": "Quiver",
       "emoji": "🚁",
       "lead": "Erick · Alperen",
-      "phase": "Devkit phase — customer flight prep",
-      "milestone": "First devkit flight — target Mon Jul 6",
-      "blocker": "GPS2 underperforming (replacement requested) · Remote ID operator-location warning (MK32 QGC incompatibility)",
+      "phase": "Devkit phase — first devkit FLEW Jul 9 (Houston)",
+      "milestone": "Next test flight w/ new M9N GPS (installed Jul 13) when Turkey side has bandwidth",
+      "blocker": "Attachment-interface supplier link dead (replacement sourcing open) · old GPS failed in flight (component popped off board)",
       "status": "active",
-      "updated": "2026-07-01"
+      "updated": "2026-07-14"
     },
     {
       "name": "Spearhead",
       "emoji": "✈️",
       "lead": "Alperen · Zeynep",
-      "phase": "PT1 build — structure + electrical",
-      "milestone": "Motors/ESCs/props clear customs ~Jul 17 → testing ~Jul 17–19",
-      "blocker": "Aero stability question (pusher-motor correction) unresolved",
+      "phase": "PT1 build — large structural parts cut, fuselage skins printing",
+      "milestone": "Wood+CF airframe assembly + transition prints, then full-system bench test",
+      "blocker": "Motors/ESCs/props still in customs (\"likely a few days\", unconfirmed) · PDB thick-cable output connection method undecided · pusher-motor stability question unresolved",
       "status": "active",
-      "updated": "2026-06-29"
+      "updated": "2026-07-14"
     },
     {
       "name": "Caribou",
       "emoji": "🛗",
       "lead": "Julius",
-      "phase": "Phase 1 — final month (July)",
-      "milestone": "PCBs ship ~mid-July → ground test, then tethered hover",
-      "blocker": "Test site not locked",
+      "phase": "Phase 1 — final stretch; CMAIN arrived, enclosures printed",
+      "milestone": "CBC PCBs arrive Jul 15–16 → first motor test → hover testing week of Jul 20",
+      "blocker": "—",
       "status": "active",
-      "updated": "2026-06-30"
+      "updated": "2026-07-14"
     },
     {
       "name": "Longshot",
       "emoji": "🔋",
       "lead": "Julius",
-      "phase": "Design — custom 21700 pack",
-      "milestone": "14S10P RS50 pack (~2,520 Wh, ~9.8 kg cells)",
+      "phase": "Design — custom 21700 pack (14S10P RS50)",
+      "milestone": "Drop-in spot-welded battery replacement nearing finish (no ETA while Caribou occupies Julius)",
       "blocker": "—",
       "status": "active",
-      "updated": "2026-06-15"
+      "updated": "2026-07-13"
+    },
+    {
+      "name": "Arrow Spreader (Javelina)",
+      "emoji": "🌾",
+      "lead": "Thomas · Vector",
+      "phase": "v1 hacked JMRRC flying grids; v3 = full open-source Arrow spreader (decided Jul 10)",
+      "milestone": "v3 program design doc (Vector) → issue #233; DroneCAN node + COTS ESC electronics-first",
+      "blocker": "JMRRC internal PCB corrupts PWM — bypassed; spinner ESC overheats (relocate/replace)",
+      "status": "active",
+      "updated": "2026-07-14"
     },
     {
       "name": "Quiver Mini / Kestrel",
       "emoji": "🐦",
       "lead": "Julius (Kestrel)",
       "phase": "Parked — Kestrel is the near-term small platform",
-      "milestone": "Upload Kestrel as reference build",
+      "milestone": "Upload Kestrel as reference build · Zeynep's micro-swarm proposal echoes the Mini idea",
       "blocker": "Clean-sheet Mini paused (May 21) pending bandwidth",
       "status": "parked",
-      "updated": "2026-05-21"
+      "updated": "2026-07-13"
     }
   ],
   "actions": [
-    {"owner": "Erick", "item": "First devkit flight if log/param review is clean", "due": "Mon Jul 6", "where": "Quiver"},
-    {"owner": "Zeynep", "item": "Review Erick's ground-run logs + parameters", "due": "before Jul 6", "where": "Quiver"},
-    {"owner": "Thomas", "item": "Replacement GPS for Erick's devkit", "due": "asap", "where": "Quiver"},
-    {"owner": "Julius", "item": "Caribou PCB manufacturing + shipping", "due": "~mid-July", "where": "Caribou"},
-    {"owner": "Alperen", "item": "Plywood cutting + skin/tail work while motors in transit", "due": "July", "where": "Spearhead"},
-    {"owner": "Erick", "item": "Finish Spearhead wiring table", "due": "July", "where": "Spearhead"},
-    {"owner": "Erick + Thomas", "item": "Attachment-interface replacement sourcing (supplier link dead)", "due": "open", "where": "Quiver"},
-    {"owner": "Thomas", "item": "Granular dispenser wiring for Spike-granule tests", "due": "open", "where": "Javelina"}
+    {"owner": "Vector", "item": "Spreader v3 program design doc → issue #233", "due": "this week", "where": "Quiver"},
+    {"owner": "Thomas", "item": "Bypass JMRRC PCB entirely + fly spreader grids", "due": "this week", "where": "Javelina"},
+    {"owner": "Thomas", "item": "Web store → on-chain pivot (smart-contract commission flow)", "due": "week of Jul 13", "where": "DAO"},
+    {"owner": "Erick", "item": "AIP-010 TL;DR post on forum", "due": "during vote", "where": "Governance"},
+    {"owner": "Erick", "item": "May/June progress-report goals (admin backlog)", "due": "this week", "where": "DAO"},
+    {"owner": "Zeynep", "item": "Devkit log-review forum post", "due": "open", "where": "Quiver"},
+    {"owner": "Julius", "item": "CBC first motor test once PCBs land Jul 15–16", "due": "~Jul 16", "where": "Caribou"},
+    {"owner": "Alperen", "item": "PT1 airframe assembly while transition parts print", "due": "July", "where": "Spearhead"},
+    {"owner": "Erick + Thomas", "item": "Attachment-interface replacement sourcing (supplier link dead)", "due": "open", "where": "Quiver"}
   ],
   "governance": [
-    {"item": "No active Snapshot votes", "state": "quiet"},
-    {"item": "AIP-10 — Tokenomics (Erick)", "state": "draft"},
-    {"item": "Optimistic infra lane — challenge window view lands here", "state": "future"}
+    {"item": "AIP-010 — Tokenomics: LIVE on Snapshot, voting closes ~Jul 21", "state": "draft"},
+    {"item": "First token sale (1.5M $ARROW / $300K USDC, conditional on AIP-010) — posted Jul 13", "state": "draft"},
+    {"item": "Sleety's Media/Docs/Compass proposals ($61,320 max / 28wk) — PASSED Jul 13", "state": "quiet"},
+    {"item": "Phase 2 board election — slate proposed, AIP drafting next", "state": "future"}
   ],
   "pulse": [
-    {"repo": "project-quiver", "pr": 225, "title": "feat: per-subassembly GLB export for the docs 3D viewer", "author": "thomasgarrison", "age": "21d"},
-    {"repo": "project-quiver", "pr": 223, "title": "Added fusion link to project readme and manufacturing guide", "author": "errrks", "age": "34d"},
-    {"repo": "project-quiver", "pr": 222, "title": "docs: add PWM MAD 4x08 parameter variant", "author": "vector-arrow", "age": "43d"},
-    {"repo": "project-spearhead", "pr": 26, "title": "Add realtime Flight Deck GUI", "author": "ZeynepB5793", "age": "15d"},
-    {"repo": "project-spearhead", "pr": 5, "title": "docs: add Spearhead intro page (draft)", "author": "vector-arrow", "age": "46d"}
+    {"repo": "project-quiver", "pr": 235, "title": "docs: fix HAR-0014 bottom payload signal label", "author": "vector-arrow", "age": "4d"},
+    {"repo": "project-quiver", "pr": 232, "title": "V1 of Quiver initial configuration document", "author": "errrks", "age": "5d"},
+    {"repo": "project-quiver", "pr": 225, "title": "feat: per-subassembly GLB export for the docs 3D viewer", "author": "thomasgarrison", "age": "33d"},
+    {"repo": "project-quiver", "pr": 223, "title": "Added fusion link to project readme and manufacturing guide", "author": "errrks", "age": "46d"},
+    {"repo": "project-quiver", "pr": 222, "title": "docs: add PWM MAD 4x08 parameter variant", "author": "vector-arrow", "age": "55d"},
+    {"repo": "project-spearhead", "pr": 5, "title": "docs: add Spearhead intro page (draft)", "author": "vector-arrow", "age": "58d"}
   ],
   "calendar": [
-    {"when": "Thu (weekly)", "what": "Quiver call — Jul 2 skipped (Erick out)"},
-    {"when": "Mon Jul 6", "what": "Tentative: first devkit flight (Houston)"},
-    {"when": "~Jul 17–19", "what": "Turkey meetup / Spearhead testing window (shipment-dependent)"}
+    {"when": "Jul 15–16", "what": "Caribou CBC PCBs arrive → first motor test"},
+    {"when": "~Jul 17–19", "what": "Turkey meetup / Spearhead window (customs-dependent, unconfirmed)"},
+    {"when": "Week of Jul 20", "what": "Caribou hover testing target (short hover + incremental inputs)"},
+    {"when": "~Jul 21", "what": "AIP-010 Snapshot vote closes → token launch push (CoinGecko/DexScreener/Twitter)"},
+    {"when": "Thu (weekly)", "what": "Quiver call"}
   ],
-  "treasury": {"note": "On-chain treasury reads land in v2 · AIP-009 revenue counter once the store ships"}
+  "treasury": {"note": "On-chain treasury reads land in v2 · AIP-009 revenue counter once the on-chain store ships (smart-contract commission flow in design)"}
 }
