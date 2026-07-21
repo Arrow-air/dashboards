@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-14 21:20 CT",
+  "generated": "2026-07-21 12:40 CT",
   "projects": [
     {
       "name": "Quiver",
@@ -25,11 +25,11 @@
       "name": "Caribou",
       "emoji": "🛗",
       "lead": "Julius",
-      "phase": "Phase 1 — final stretch; CMAIN arrived, enclosures printed",
-      "milestone": "CBC PCBs arrive Jul 15–16 → first motor test → hover testing week of Jul 20",
+      "phase": "Phase 1 — final stretch; CBC boards up, firmware bench-validated on real FC",
+      "milestone": "Both CBCs allocated via DNA + battery telemetry bridged to Mission Planner (Jul 21) → hover testing this week",
       "blocker": "—",
       "status": "active",
-      "updated": "2026-07-14"
+      "updated": "2026-07-21"
     },
     {
       "name": "Longshot",
@@ -66,32 +66,36 @@
     {"owner": "Vector", "item": "Spreader v3 program design doc → issue #233", "due": "this week", "where": "Quiver"},
     {"owner": "Thomas", "item": "Bypass JMRRC PCB entirely + fly spreader grids", "due": "this week", "where": "Javelina"},
     {"owner": "Thomas", "item": "Web store → on-chain pivot (smart-contract commission flow)", "due": "week of Jul 13", "where": "DAO"},
-    {"owner": "Erick", "item": "AIP-010 TL;DR post on forum", "due": "during vote", "where": "Governance"},
+    {"owner": "Thomas", "item": "Board election Snapshot proposal (after nominations close)", "due": "Jul 22", "where": "Governance"},
     {"owner": "Erick", "item": "May/June progress-report goals (admin backlog)", "due": "this week", "where": "DAO"},
     {"owner": "Zeynep", "item": "Devkit log-review forum post", "due": "open", "where": "Quiver"},
-    {"owner": "Julius", "item": "CBC first motor test once PCBs land Jul 15–16", "due": "~Jul 16", "where": "Caribou"},
+    {"owner": "Julius", "item": "Caribou hover testing (CBC firmware validated Jul 21)", "due": "this week", "where": "Caribou"},
     {"owner": "Alperen", "item": "PT1 airframe assembly while transition parts print", "due": "July", "where": "Spearhead"},
     {"owner": "Erick + Thomas", "item": "Attachment-interface replacement sourcing (supplier link dead)", "due": "open", "where": "Quiver"}
   ],
   "governance": [
-    {"item": "AIP-010 — Tokenomics: LIVE on Snapshot, voting closes ~Jul 21", "state": "draft"},
-    {"item": "First token sale (1.5M $ARROW / $300K USDC, conditional on AIP-010) — posted Jul 13", "state": "draft"},
-    {"item": "Sleety's Media/Docs/Compass proposals ($61,320 max / 28wk) — PASSED Jul 13", "state": "quiet"},
-    {"item": "Phase 2 board election — slate proposed, AIP drafting next", "state": "future"}
+    {"item": "AIP-010 — Tokenomics: PASSED Jul 21 (4.62M For / 0 Against) — marked Final in dao-aips", "state": "quiet"},
+    {"item": "First $ARROW Treasury Sale — Tranche 1: LIVE on Snapshot, closes ~Jul 22", "state": "draft"},
+    {"item": "Board election — nominations close Jul 22 23:59 UTC; 5 candidates declared; Snapshot vote ~Jul 23–30", "state": "draft"},
+    {"item": "Sleety's Media/Docs/Compass proposals ($61,320 max / 28wk) — PASSED Jul 13", "state": "quiet"}
   ],
   "pulse": [
-    {"repo": "project-quiver", "pr": 235, "title": "docs: fix HAR-0014 bottom payload signal label", "author": "vector-arrow", "age": "4d"},
-    {"repo": "project-quiver", "pr": 232, "title": "V1 of Quiver initial configuration document", "author": "errrks", "age": "5d"},
-    {"repo": "project-quiver", "pr": 225, "title": "feat: per-subassembly GLB export for the docs 3D viewer", "author": "thomasgarrison", "age": "33d"},
-    {"repo": "project-quiver", "pr": 223, "title": "Added fusion link to project readme and manufacturing guide", "author": "errrks", "age": "46d"},
-    {"repo": "project-quiver", "pr": 222, "title": "docs: add PWM MAD 4x08 parameter variant", "author": "vector-arrow", "age": "55d"},
-    {"repo": "project-spearhead", "pr": 5, "title": "docs: add Spearhead intro page (draft)", "author": "vector-arrow", "age": "58d"}
+    {"repo": "project-quiver", "pr": 242, "title": "docs: add Quiver attachment developer guide", "author": "leafwithered", "age": "1d"},
+    {"repo": "project-quiver", "pr": 241, "title": "docs: add platform engineering report", "author": "soaravant", "age": "2d"},
+    {"repo": "project-quiver", "pr": 235, "title": "docs: fix HAR-0014 bottom payload signal label", "author": "vector-arrow", "age": "11d"},
+    {"repo": "project-quiver", "pr": 232, "title": "V1 of Quiver initial configuration document", "author": "errrks", "age": "12d"},
+    {"repo": "project-quiver", "pr": 225, "title": "feat: per-subassembly GLB export for the docs 3D viewer", "author": "thomasgarrison", "age": "40d"},
+    {"repo": "project-quiver", "pr": 223, "title": "Added fusion link to project readme and manufacturing guide", "author": "errrks", "age": "53d"},
+    {"repo": "project-quiver", "pr": 222, "title": "docs: add PWM MAD 4x08 parameter variant", "author": "vector-arrow", "age": "62d"},
+    {"repo": "project-caribou", "pr": 55, "title": "Caribou standard parameter file (forked from Quiver)", "author": "vector-arrow", "age": "1d"},
+    {"repo": "project-caribou", "pr": 54, "title": "CBC firmware v0.1.0 (ESP32-S3): switch control, dual CAN, battery telemetry", "author": "vector-arrow", "age": "5d"},
+    {"repo": "project-spearhead", "pr": 28, "title": "ci: fix sanity checks — editorconfig and cspell excludes for vendored files", "author": "vector-arrow", "age": "1d"}
   ],
   "calendar": [
-    {"when": "Jul 15–16", "what": "Caribou CBC PCBs arrive → first motor test"},
-    {"when": "~Jul 17–19", "what": "Turkey meetup / Spearhead window (customs-dependent, unconfirmed)"},
     {"when": "Week of Jul 20", "what": "Caribou hover testing target (short hover + incremental inputs)"},
-    {"when": "~Jul 21", "what": "AIP-010 Snapshot vote closes → token launch push (CoinGecko/DexScreener/Twitter)"},
+    {"when": "Jul 22", "what": "Treasury sale Tranche 1 Snapshot vote closes · board election nominations close 23:59 UTC"},
+    {"when": "~Jul 23–30", "what": "Board election Snapshot vote (approval voting, 5 candidates)"},
+    {"when": "Post AIP-010", "what": "Token launch push (CoinGecko/DexScreener/Twitter)"},
     {"when": "Thu (weekly)", "what": "Quiver call"}
   ],
   "treasury": {"note": "On-chain treasury reads land in v2 · AIP-009 revenue counter once the on-chain store ships (smart-contract commission flow in design)"}
