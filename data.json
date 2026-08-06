@@ -25,11 +25,11 @@
       "name": "Caribou",
       "emoji": "🛗",
       "lead": "Julius",
-      "phase": "PT1 assembled — pre-first-flight bench log reviewed clean (motors matched, CAN spotless, RTK fixed)",
-      "milestone": "First flight imminent · CBC firmware hardened (drone bus 500 kbps v0.3.2, TX frame-order fix v0.3.3) · docs PR #56 merged",
+      "phase": "Phase 1 ENDED Jul 31 — PT1 assembled, pre-first-flight bench log clean; Phase 2 proposal on forum (Sep 2026–Feb 2027)",
+      "milestone": "Phase 2 (4 steps): PT1 flight campaign → PT1.5 build in USA (T40 bays) → PT1 retrofit → community-build docs · Snapshot after forum discussion",
       "blocker": "—",
       "status": "active",
-      "updated": "2026-07-31"
+      "updated": "2026-08-05"
     },
     {
       "name": "AIP-009 Store",
@@ -127,6 +127,10 @@
   "governance": [
     {
       "item": "Business Development Project Approval — LIVE on Snapshot, closes ~Aug 8 (36.7K For so far)",
+      "state": "draft"
+    },
+    {
+      "item": "Caribou Phase 1 review + Phase 2 proposal published on forum (dao.arrowair.com/t/181) — Snapshot to follow",
       "state": "draft"
     },
     {
