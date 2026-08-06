@@ -54,7 +54,7 @@
 </style>
 </head>
 <body>
-<header><h1><span class="arrow">🏹 Arrow</span> — State of the DAO</h1><span class="gen">generated 2026-07-21 12:40 CT · by Vector</span></header>
+<header><h1><span class="arrow">🏹 Arrow</span> — State of the DAO</h1><span class="gen">generated 2026-08-05 22:50 CT · by Vector</span></header>
 <div class="tagline">Open-source VTOL aircraft, built by a global community. This page regenerates from meeting notes, GitHub, Discord, and chain state.</div>
 
 <h2>Projects</h2>
@@ -62,70 +62,70 @@
     <div class="card">
       <div class="card-head"><span class="pemoji">🚁</span><h3>Quiver</h3><span class="badge active-badge">active</span></div>
       <div class="row"><span class="lbl">Lead</span>Erick · Alperen</div>
-      <div class="row"><span class="lbl">Phase</span>Devkit phase — first devkit FLEW Jul 9 (Houston)</div>
-      <div class="row"><span class="lbl">Next</span>Next test flight w/ new M9N GPS (installed Jul 13) when Turkey side has bandwidth</div>
-      <div class="row blocker"><span class="lbl">Blocker</span>Attachment-interface supplier link dead (replacement sourcing open) · old GPS failed in flight (component popped off board)</div>
-      <div class="updated">updated 2026-07-14</div>
+      <div class="row"><span class="lbl">Phase</span>Devkit phase — flight ops in Houston; OA testing restarting (ground-first, one sensor at a time)</div>
+      <div class="row"><span class="lbl">Next</span>OA ground commissioning (360 lidar → forward radar) · meetup attachment build being scoped by Erick</div>
+      <div class="row blocker"><span class="lbl">Blocker</span>HOU GPS2 EMI unresolved (armed-only velocity excursions; config + relocation tried, Texas build healthy) · attachment-interface supplier link still dead</div>
+      <div class="updated">updated 2026-07-27</div>
     </div>
     <div class="card">
       <div class="card-head"><span class="pemoji">✈️</span><h3>Spearhead</h3><span class="badge active-badge">active</span></div>
       <div class="row"><span class="lbl">Lead</span>Alperen · Zeynep</div>
-      <div class="row"><span class="lbl">Phase</span>PT1 build — large structural parts cut, fuselage skins printing</div>
-      <div class="row"><span class="lbl">Next</span>Wood+CF airframe assembly + transition prints, then full-system bench test</div>
-      <div class="row blocker"><span class="lbl">Blocker</span>Motors/ESCs/props still in customs (&quot;likely a few days&quot;, unconfirmed) · PDB thick-cable output connection method undecided · pusher-motor stability question unresolved</div>
-      <div class="updated">updated 2026-07-14</div>
+      <div class="row"><span class="lbl">Phase</span>PT1 build — fuselage ready to glue, wing ribs cut, skins printing (PLA Aero); design frozen</div>
+      <div class="row"><span class="lbl">Next</span>MAD re-invoices motors as &#x27;electric motors&#x27; + reships (~2 wk optimistic) · ESC placement compromise: boom-mounted ~60cm leads, bench test first</div>
+      <div class="row blocker"><span class="lbl">Blocker</span>Motors/ESCs REJECTED by Turkish customs (returned to Poland) · KDE cap-bank sizing unverified · tail CAN→PWM converter lost its power tap</div>
+      <div class="updated">updated 2026-07-28</div>
     </div>
     <div class="card">
       <div class="card-head"><span class="pemoji">🛗</span><h3>Caribou</h3><span class="badge active-badge">active</span></div>
       <div class="row"><span class="lbl">Lead</span>Julius</div>
-      <div class="row"><span class="lbl">Phase</span>Phase 1 — final stretch; CBC boards up, firmware bench-validated on real FC</div>
-      <div class="row"><span class="lbl">Next</span>Both CBCs allocated via DNA + battery telemetry bridged to Mission Planner (Jul 21) → hover testing this week</div>
+      <div class="row"><span class="lbl">Phase</span>PT1 assembled — pre-first-flight bench log reviewed clean (motors matched, CAN spotless, RTK fixed)</div>
+      <div class="row"><span class="lbl">Next</span>First flight imminent · CBC firmware hardened (drone bus 500 kbps v0.3.2, TX frame-order fix v0.3.3) · docs PR #56 merged</div>
       <div class="row blocker none"><span class="lbl">Blocker</span>—</div>
-      <div class="updated">updated 2026-07-21</div>
+      <div class="updated">updated 2026-07-31</div>
     </div>
     <div class="card">
-      <div class="card-head"><span class="pemoji">🔋</span><h3>Longshot</h3><span class="badge active-badge">active</span></div>
+      <div class="card-head"><span class="pemoji">🛒</span><h3>AIP-009 Store</h3><span class="badge active-badge">active</span></div>
+      <div class="row"><span class="lbl">Lead</span>Thomas · Vector</div>
+      <div class="row"><span class="lbl">Phase</span>On-chain settlement live on Base Sepolia — full-stack USDC E2E passed (real order, real USDC, watcher → paid)</div>
+      <div class="row"><span class="lbl">Next</span>Checkout UI done (connect→approve→settle→receipt) · receipt-NFT design + 2 PRs awaiting Thomas · Crossmint deferred</div>
+      <div class="row blocker"><span class="lbl">Blocker</span>Production DAO fee bounds undecided (catalog 20% devkit vs 0% propellers — question with Erick)</div>
+      <div class="updated">updated 2026-08-01</div>
+    </div>
+    <div class="card parked">
+      <div class="card-head"><span class="pemoji">🔋</span><h3>Longshot</h3><span class="badge parked-badge">parked</span></div>
       <div class="row"><span class="lbl">Lead</span>Julius</div>
-      <div class="row"><span class="lbl">Phase</span>Design — custom 21700 pack (14S10P RS50)</div>
-      <div class="row"><span class="lbl">Next</span>Drop-in spot-welded battery replacement nearing finish (no ETA while Caribou occupies Julius)</div>
-      <div class="row blocker none"><span class="lbl">Blocker</span>—</div>
-      <div class="updated">updated 2026-07-13</div>
+      <div class="row"><span class="lbl">Phase</span>Design — custom 21700 pack (14S9P, 126 cells, ~2.2–2.3 kWh)</div>
+      <div class="row"><span class="lbl">Next</span>PT1 nearing finish; BMS v0 dummy → v1 STM32 smart BMS · cell pick deferred to prototype</div>
+      <div class="row blocker"><span class="lbl">Blocker</span>Paused while Caribou occupies Julius</div>
+      <div class="updated">updated 2026-08-03</div>
     </div>
     <div class="card">
       <div class="card-head"><span class="pemoji">🌾</span><h3>Arrow Spreader (Javelina)</h3><span class="badge active-badge">active</span></div>
       <div class="row"><span class="lbl">Lead</span>Thomas · Vector</div>
-      <div class="row"><span class="lbl">Phase</span>v1 hacked JMRRC flying grids; v3 = full open-source Arrow spreader (decided Jul 10)</div>
-      <div class="row"><span class="lbl">Next</span>v3 program design doc (Vector) → issue #233; DroneCAN node + COTS ESC electronics-first</div>
+      <div class="row"><span class="lbl">Phase</span>v1 hacked JMRRC flying grids; v3 = full open-source Arrow spreader</div>
+      <div class="row"><span class="lbl">Next</span>v3 program design doc → issue #233; DroneCAN node + COTS ESC electronics-first</div>
       <div class="row blocker"><span class="lbl">Blocker</span>JMRRC internal PCB corrupts PWM — bypassed; spinner ESC overheats (relocate/replace)</div>
       <div class="updated">updated 2026-07-14</div>
-    </div>
-    <div class="card parked">
-      <div class="card-head"><span class="pemoji">🐦</span><h3>Quiver Mini / Kestrel</h3><span class="badge parked-badge">parked</span></div>
-      <div class="row"><span class="lbl">Lead</span>Julius (Kestrel)</div>
-      <div class="row"><span class="lbl">Phase</span>Parked — Kestrel is the near-term small platform</div>
-      <div class="row"><span class="lbl">Next</span>Upload Kestrel as reference build · Zeynep&#x27;s micro-swarm proposal echoes the Mini idea</div>
-      <div class="row blocker"><span class="lbl">Blocker</span>Clean-sheet Mini paused (May 21) pending bandwidth</div>
-      <div class="updated">updated 2026-07-13</div>
     </div></div>
 
 <h2>Action Register — who has the ball</h2>
-<table><tr><td class="owner">Vector</td><td>Spreader v3 program design doc → issue #233</td><td class="due">this week</td><td class="where">Quiver</td></tr><tr><td class="owner">Thomas</td><td>Bypass JMRRC PCB entirely + fly spreader grids</td><td class="due">this week</td><td class="where">Javelina</td></tr><tr><td class="owner">Thomas</td><td>Web store → on-chain pivot (smart-contract commission flow)</td><td class="due">week of Jul 13</td><td class="where">DAO</td></tr><tr><td class="owner">Thomas</td><td>Board election Snapshot proposal (after nominations close)</td><td class="due">Jul 22</td><td class="where">Governance</td></tr><tr><td class="owner">Erick</td><td>May/June progress-report goals (admin backlog)</td><td class="due">this week</td><td class="where">DAO</td></tr><tr><td class="owner">Zeynep</td><td>Devkit log-review forum post</td><td class="due">open</td><td class="where">Quiver</td></tr><tr><td class="owner">Julius</td><td>Caribou hover testing (CBC firmware validated Jul 21)</td><td class="due">this week</td><td class="where">Caribou</td></tr><tr><td class="owner">Alperen</td><td>PT1 airframe assembly while transition parts print</td><td class="due">July</td><td class="where">Spearhead</td></tr><tr><td class="owner">Erick + Thomas</td><td>Attachment-interface replacement sourcing (supplier link dead)</td><td class="due">open</td><td class="where">Quiver</td></tr></table>
+<table><tr><td class="owner">Thomas</td><td>Decide receipt-NFT design + greenlight arrow-store/arrow-catalog PRs (USDC flow done)</td><td class="due">open</td><td class="where">AIP-009 Store</td></tr><tr><td class="owner">Erick</td><td>Production DAO fee bounds (20% devkit vs 0% propellers data points)</td><td class="due">open</td><td class="where">AIP-009 Store</td></tr><tr><td class="owner">Erick</td><td>Scope + order meetup attachment build parts (gap flagged Jul 27)</td><td class="due">this week</td><td class="where">Quiver</td></tr><tr><td class="owner">Zeynep</td><td>OA ground commissioning — 360 lidar first, then forward radar</td><td class="due">this week</td><td class="where">Quiver</td></tr><tr><td class="owner">Erick + Zeynep</td><td>HOU GPS2 EMI: static MK32/air-unit on/off test + node-level GNSS config check</td><td class="due">open</td><td class="where">Quiver</td></tr><tr><td class="owner">Julius</td><td>Caribou PT1 first flight (bench log cleared Jul 31)</td><td class="due">imminent</td><td class="where">Caribou</td></tr><tr><td class="owner">Alperen</td><td>Track MAD motor re-invoice/reship through customs</td><td class="due">~2 wk</td><td class="where">Spearhead</td></tr><tr><td class="owner">Alperen + Zeynep</td><td>ESC extended-lead bench test (boom-mount compromise)</td><td class="due">open</td><td class="where">Spearhead</td></tr><tr><td class="owner">Thomas</td><td>Merge website PR #222 (token page w/ CoinGecko request ID)</td><td class="due">open</td><td class="where">Token</td></tr><tr><td class="owner">Erick + Thomas</td><td>Attachment-interface replacement sourcing (supplier link dead)</td><td class="due">open</td><td class="where">Quiver</td></tr></table>
 
 <div class="cols">
 <div>
 <h2>Governance</h2>
-<ul><li class="gov quiet"><span class="dot"></span>AIP-010 — Tokenomics: PASSED Jul 21 (4.62M For / 0 Against) — marked Final in dao-aips<span class="gstate">quiet</span></li><li class="gov draft"><span class="dot"></span>First $ARROW Treasury Sale — Tranche 1: LIVE on Snapshot, closes ~Jul 22<span class="gstate">draft</span></li><li class="gov draft"><span class="dot"></span>Board election — nominations close Jul 22 23:59 UTC; 5 candidates declared; Snapshot vote ~Jul 23–30<span class="gstate">draft</span></li><li class="gov quiet"><span class="dot"></span>Sleety&#x27;s Media/Docs/Compass proposals ($61,320 max / 28wk) — PASSED Jul 13<span class="gstate">quiet</span></li></ul>
+<ul><li class="gov draft"><span class="dot"></span>Business Development Project Approval — LIVE on Snapshot, closes ~Aug 8 (36.7K For so far)<span class="gstate">draft</span></li><li class="gov quiet"><span class="dot"></span>2026 Board Election — CLOSED Jul 29: all five elected (Sleety, Thomas, Erick, Alperen, Julius; approval voting)<span class="gstate">quiet</span></li><li class="gov quiet"><span class="dot"></span>First $ARROW Treasury Sale Tranche 1 — PASSED Jul 22 (4.32M For / 0 Against)<span class="gstate">quiet</span></li><li class="gov quiet"><span class="dot"></span>AIP-010 Tokenomics — PASSED Jul 21, Final in dao-aips<span class="gstate">quiet</span></li><li class="gov draft"><span class="dot"></span>$ARROW live: V4 LP since Jul 21 (~$0.19) · Blockaid flag cleared Jul 28 · CoinGecko resubmitted Aug 4 (CL0408260044)<span class="gstate">draft</span></li><li class="gov quiet"><span class="dot"></span>Compass: kickoff goals set (manufacturing AIP + contributor pipeline) · bounty creation session ran Jul 31<span class="gstate">quiet</span></li></ul>
 <h2>Treasury</h2>
-<div class="treasury">On-chain treasury reads land in v2 · AIP-009 revenue counter once the on-chain store ships (smart-contract commission flow in design)</div>
+<div class="treasury">$ARROW/USDC V4 LP live since Jul 21 (~$0.19, ~$45K/side) · ArrowSettlement on Base Sepolia (testnet) — mainnet + AIP-009 revenue counter after Thomas signs off</div>
 </div>
 <div>
 <h2>Calendar</h2>
-<ul class="cal"><li><span class="when">Week of Jul 20</span>Caribou hover testing target (short hover + incremental inputs)</li><li><span class="when">Jul 22</span>Treasury sale Tranche 1 Snapshot vote closes · board election nominations close 23:59 UTC</li><li><span class="when">~Jul 23–30</span>Board election Snapshot vote (approval voting, 5 candidates)</li><li><span class="when">Post AIP-010</span>Token launch push (CoinGecko/DexScreener/Twitter)</li><li><span class="when">Thu (weekly)</span>Quiver call</li></ul>
+<ul class="cal"><li><span class="when">~Aug 8</span>Business Development Snapshot vote closes</li><li><span class="when">~Aug 10–14</span>Spearhead motors reshipment window (optimistic, customs permitting)</li><li><span class="when">Aug 14 (biweekly Fri)</span>Compass call 11:00 CDT</li><li><span class="when">Thu (weekly)</span>Quiver call</li><li><span class="when">Imminent</span>Caribou PT1 first flight</li></ul>
 </div>
 </div>
 
 <h2>GitHub Pulse — PRs awaiting review</h2>
-<table><tr><td class="repo">project-quiver</td><td><a href="https://github.com/Arrow-air/project-quiver/pull/242">#242</a> docs: add Quiver attachment developer guide</td><td class="owner">leafwithered</td><td class="due">1d open</td></tr><tr><td class="repo">project-quiver</td><td><a href="https://github.com/Arrow-air/project-quiver/pull/241">#241</a> docs: add platform engineering report</td><td class="owner">soaravant</td><td class="due">2d open</td></tr><tr><td class="repo">project-quiver</td><td><a href="https://github.com/Arrow-air/project-quiver/pull/235">#235</a> docs: fix HAR-0014 bottom payload signal label</td><td class="owner">vector-arrow</td><td class="due">11d open</td></tr><tr><td class="repo">project-quiver</td><td><a href="https://github.com/Arrow-air/project-quiver/pull/232">#232</a> V1 of Quiver initial configuration document</td><td class="owner">errrks</td><td class="due">12d open</td></tr><tr><td class="repo">project-quiver</td><td><a href="https://github.com/Arrow-air/project-quiver/pull/225">#225</a> feat: per-subassembly GLB export for the docs 3D viewer</td><td class="owner">thomasgarrison</td><td class="due">40d open</td></tr><tr><td class="repo">project-quiver</td><td><a href="https://github.com/Arrow-air/project-quiver/pull/223">#223</a> Added fusion link to project readme and manufacturing guide</td><td class="owner">errrks</td><td class="due">53d open</td></tr><tr><td class="repo">project-quiver</td><td><a href="https://github.com/Arrow-air/project-quiver/pull/222">#222</a> docs: add PWM MAD 4x08 parameter variant</td><td class="owner">vector-arrow</td><td class="due">62d open</td></tr><tr><td class="repo">project-caribou</td><td><a href="https://github.com/Arrow-air/project-caribou/pull/55">#55</a> Caribou standard parameter file (forked from Quiver)</td><td class="owner">vector-arrow</td><td class="due">1d open</td></tr><tr><td class="repo">project-caribou</td><td><a href="https://github.com/Arrow-air/project-caribou/pull/54">#54</a> CBC firmware v0.1.0 (ESP32-S3): switch control, dual CAN, battery telemetry</td><td class="owner">vector-arrow</td><td class="due">5d open</td></tr><tr><td class="repo">project-spearhead</td><td><a href="https://github.com/Arrow-air/project-spearhead/pull/28">#28</a> ci: fix sanity checks — editorconfig and cspell excludes for vendored files</td><td class="owner">vector-arrow</td><td class="due">1d open</td></tr></table>
+<table><tr><td class="repo">project-quiver</td><td><a href="https://github.com/Arrow-air/project-quiver/pull/243">#243</a> docs: convert GitHub-style alerts to Docusaurus admonitions in Pilot Handbook</td><td class="owner">thomasgarrison</td><td class="due">0d open</td></tr><tr><td class="repo">project-quiver</td><td><a href="https://github.com/Arrow-air/project-quiver/pull/235">#235</a> docs: fix HAR-0014 bottom payload signal label</td><td class="owner">vector-arrow</td><td class="due">26d open</td></tr><tr><td class="repo">project-quiver</td><td><a href="https://github.com/Arrow-air/project-quiver/pull/232">#232</a> V1 of Quiver initial configuration document</td><td class="owner">errrks</td><td class="due">28d open</td></tr><tr><td class="repo">project-quiver</td><td><a href="https://github.com/Arrow-air/project-quiver/pull/225">#225</a> feat: per-subassembly GLB export for the docs 3D viewer</td><td class="owner">thomasgarrison</td><td class="due">56d open</td></tr><tr><td class="repo">project-caribou</td><td><a href="https://github.com/Arrow-air/project-caribou/pull/55">#55</a> Caribou standard parameter file (forked from Quiver)</td><td class="owner">vector-arrow</td><td class="due">16d open</td></tr><tr><td class="repo">project-caribou</td><td><a href="https://github.com/Arrow-air/project-caribou/pull/54">#54</a> CBC firmware v0.1.0 (ESP32-S3): switch control, dual CAN, battery telemetry</td><td class="owner">vector-arrow</td><td class="due">20d open</td></tr><tr><td class="repo">project-spearhead</td><td><a href="https://github.com/Arrow-air/project-spearhead/pull/28">#28</a> ci: fix sanity checks — editorconfig and cspell excludes</td><td class="owner">vector-arrow</td><td class="due">16d open</td></tr><tr><td class="repo">dao-aips</td><td><a href="https://github.com/Arrow-air/dao-aips/pull/20">#20</a> AIP-007: add Sleety&#x27;s three active projects (Compass, Media, Docs)</td><td class="owner">sl33ty</td><td class="due">14d open</td></tr><tr><td class="repo">arrow-store</td><td><a href="https://github.com/Arrow-air/arrow-store/pull/9">#9</a> feat: redesign purchase flow — manufacturer routing, payment selection, DAO fee display</td><td class="owner">waterWang</td><td class="due">2d open</td></tr><tr><td class="repo">arrow-catalog</td><td><a href="https://github.com/Arrow-air/arrow-catalog/pull/11">#11</a> Deploy scripts: Base Sepolia + local dev stack</td><td class="owner">vector-arrow</td><td class="due">4d open</td></tr><tr><td class="repo">website</td><td><a href="https://github.com/Arrow-air/website/pull/213">#213</a> feat: exploded view, component labels and materials for the Quiver viewer</td><td class="owner">sl33ty</td><td class="due">3d open</td></tr><tr><td class="repo">website</td><td><a href="https://github.com/Arrow-air/website/pull/219">#219</a> chore: sync bounty board data</td><td class="owner">sl33ty</td><td class="due">3d open</td></tr></table>
 
 <footer>🏹 Arrow DAO · arrowair.com · Maintained by Vector — report stale info in #bot-chat · Every card shows its last-updated date; staleness is a bug.</footer>
 </body>

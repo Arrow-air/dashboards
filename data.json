@@ -1,102 +1,264 @@
 {
-  "generated": "2026-07-21 12:40 CT",
+  "generated": "2026-08-05 22:50 CT",
   "projects": [
     {
       "name": "Quiver",
       "emoji": "🚁",
       "lead": "Erick · Alperen",
-      "phase": "Devkit phase — first devkit FLEW Jul 9 (Houston)",
-      "milestone": "Next test flight w/ new M9N GPS (installed Jul 13) when Turkey side has bandwidth",
-      "blocker": "Attachment-interface supplier link dead (replacement sourcing open) · old GPS failed in flight (component popped off board)",
+      "phase": "Devkit phase — flight ops in Houston; OA testing restarting (ground-first, one sensor at a time)",
+      "milestone": "OA ground commissioning (360 lidar → forward radar) · meetup attachment build being scoped by Erick",
+      "blocker": "HOU GPS2 EMI unresolved (armed-only velocity excursions; config + relocation tried, Texas build healthy) · attachment-interface supplier link still dead",
       "status": "active",
-      "updated": "2026-07-14"
+      "updated": "2026-07-27"
     },
     {
       "name": "Spearhead",
       "emoji": "✈️",
       "lead": "Alperen · Zeynep",
-      "phase": "PT1 build — large structural parts cut, fuselage skins printing",
-      "milestone": "Wood+CF airframe assembly + transition prints, then full-system bench test",
-      "blocker": "Motors/ESCs/props still in customs (\"likely a few days\", unconfirmed) · PDB thick-cable output connection method undecided · pusher-motor stability question unresolved",
+      "phase": "PT1 build — fuselage ready to glue, wing ribs cut, skins printing (PLA Aero); design frozen",
+      "milestone": "MAD re-invoices motors as 'electric motors' + reships (~2 wk optimistic) · ESC placement compromise: boom-mounted ~60cm leads, bench test first",
+      "blocker": "Motors/ESCs REJECTED by Turkish customs (returned to Poland) · KDE cap-bank sizing unverified · tail CAN→PWM converter lost its power tap",
       "status": "active",
-      "updated": "2026-07-14"
+      "updated": "2026-07-28"
     },
     {
       "name": "Caribou",
       "emoji": "🛗",
       "lead": "Julius",
-      "phase": "Phase 1 — final stretch; CBC boards up, firmware bench-validated on real FC",
-      "milestone": "Both CBCs allocated via DNA + battery telemetry bridged to Mission Planner (Jul 21) → hover testing this week",
+      "phase": "PT1 assembled — pre-first-flight bench log reviewed clean (motors matched, CAN spotless, RTK fixed)",
+      "milestone": "First flight imminent · CBC firmware hardened (drone bus 500 kbps v0.3.2, TX frame-order fix v0.3.3) · docs PR #56 merged",
       "blocker": "—",
       "status": "active",
-      "updated": "2026-07-21"
+      "updated": "2026-07-31"
+    },
+    {
+      "name": "AIP-009 Store",
+      "emoji": "🛒",
+      "lead": "Thomas · Vector",
+      "phase": "On-chain settlement live on Base Sepolia — full-stack USDC E2E passed (real order, real USDC, watcher → paid)",
+      "milestone": "Checkout UI done (connect→approve→settle→receipt) · receipt-NFT design + 2 PRs awaiting Thomas · Crossmint deferred",
+      "blocker": "Production DAO fee bounds undecided (catalog 20% devkit vs 0% propellers — question with Erick)",
+      "status": "active",
+      "updated": "2026-08-01"
     },
     {
       "name": "Longshot",
       "emoji": "🔋",
       "lead": "Julius",
-      "phase": "Design — custom 21700 pack (14S10P RS50)",
-      "milestone": "Drop-in spot-welded battery replacement nearing finish (no ETA while Caribou occupies Julius)",
-      "blocker": "—",
-      "status": "active",
-      "updated": "2026-07-13"
+      "phase": "Design — custom 21700 pack (14S9P, 126 cells, ~2.2–2.3 kWh)",
+      "milestone": "PT1 nearing finish; BMS v0 dummy → v1 STM32 smart BMS · cell pick deferred to prototype",
+      "blocker": "Paused while Caribou occupies Julius",
+      "status": "parked",
+      "updated": "2026-08-03"
     },
     {
       "name": "Arrow Spreader (Javelina)",
       "emoji": "🌾",
       "lead": "Thomas · Vector",
-      "phase": "v1 hacked JMRRC flying grids; v3 = full open-source Arrow spreader (decided Jul 10)",
-      "milestone": "v3 program design doc (Vector) → issue #233; DroneCAN node + COTS ESC electronics-first",
+      "phase": "v1 hacked JMRRC flying grids; v3 = full open-source Arrow spreader",
+      "milestone": "v3 program design doc → issue #233; DroneCAN node + COTS ESC electronics-first",
       "blocker": "JMRRC internal PCB corrupts PWM — bypassed; spinner ESC overheats (relocate/replace)",
       "status": "active",
       "updated": "2026-07-14"
-    },
-    {
-      "name": "Quiver Mini / Kestrel",
-      "emoji": "🐦",
-      "lead": "Julius (Kestrel)",
-      "phase": "Parked — Kestrel is the near-term small platform",
-      "milestone": "Upload Kestrel as reference build · Zeynep's micro-swarm proposal echoes the Mini idea",
-      "blocker": "Clean-sheet Mini paused (May 21) pending bandwidth",
-      "status": "parked",
-      "updated": "2026-07-13"
     }
   ],
   "actions": [
-    {"owner": "Vector", "item": "Spreader v3 program design doc → issue #233", "due": "this week", "where": "Quiver"},
-    {"owner": "Thomas", "item": "Bypass JMRRC PCB entirely + fly spreader grids", "due": "this week", "where": "Javelina"},
-    {"owner": "Thomas", "item": "Web store → on-chain pivot (smart-contract commission flow)", "due": "week of Jul 13", "where": "DAO"},
-    {"owner": "Thomas", "item": "Board election Snapshot proposal (after nominations close)", "due": "Jul 22", "where": "Governance"},
-    {"owner": "Erick", "item": "May/June progress-report goals (admin backlog)", "due": "this week", "where": "DAO"},
-    {"owner": "Zeynep", "item": "Devkit log-review forum post", "due": "open", "where": "Quiver"},
-    {"owner": "Julius", "item": "Caribou hover testing (CBC firmware validated Jul 21)", "due": "this week", "where": "Caribou"},
-    {"owner": "Alperen", "item": "PT1 airframe assembly while transition parts print", "due": "July", "where": "Spearhead"},
-    {"owner": "Erick + Thomas", "item": "Attachment-interface replacement sourcing (supplier link dead)", "due": "open", "where": "Quiver"}
+    {
+      "owner": "Thomas",
+      "item": "Decide receipt-NFT design + greenlight arrow-store/arrow-catalog PRs (USDC flow done)",
+      "due": "open",
+      "where": "AIP-009 Store"
+    },
+    {
+      "owner": "Erick",
+      "item": "Production DAO fee bounds (20% devkit vs 0% propellers data points)",
+      "due": "open",
+      "where": "AIP-009 Store"
+    },
+    {
+      "owner": "Erick",
+      "item": "Scope + order meetup attachment build parts (gap flagged Jul 27)",
+      "due": "this week",
+      "where": "Quiver"
+    },
+    {
+      "owner": "Zeynep",
+      "item": "OA ground commissioning — 360 lidar first, then forward radar",
+      "due": "this week",
+      "where": "Quiver"
+    },
+    {
+      "owner": "Erick + Zeynep",
+      "item": "HOU GPS2 EMI: static MK32/air-unit on/off test + node-level GNSS config check",
+      "due": "open",
+      "where": "Quiver"
+    },
+    {
+      "owner": "Julius",
+      "item": "Caribou PT1 first flight (bench log cleared Jul 31)",
+      "due": "imminent",
+      "where": "Caribou"
+    },
+    {
+      "owner": "Alperen",
+      "item": "Track MAD motor re-invoice/reship through customs",
+      "due": "~2 wk",
+      "where": "Spearhead"
+    },
+    {
+      "owner": "Alperen + Zeynep",
+      "item": "ESC extended-lead bench test (boom-mount compromise)",
+      "due": "open",
+      "where": "Spearhead"
+    },
+    {
+      "owner": "Thomas",
+      "item": "Merge website PR #222 (token page w/ CoinGecko request ID)",
+      "due": "open",
+      "where": "Token"
+    },
+    {
+      "owner": "Erick + Thomas",
+      "item": "Attachment-interface replacement sourcing (supplier link dead)",
+      "due": "open",
+      "where": "Quiver"
+    }
   ],
   "governance": [
-    {"item": "AIP-010 — Tokenomics: PASSED Jul 21 (4.62M For / 0 Against) — marked Final in dao-aips", "state": "quiet"},
-    {"item": "First $ARROW Treasury Sale — Tranche 1: LIVE on Snapshot, closes ~Jul 22", "state": "draft"},
-    {"item": "Board election — nominations close Jul 22 23:59 UTC; 5 candidates declared; Snapshot vote ~Jul 23–30", "state": "draft"},
-    {"item": "Sleety's Media/Docs/Compass proposals ($61,320 max / 28wk) — PASSED Jul 13", "state": "quiet"}
+    {
+      "item": "Business Development Project Approval — LIVE on Snapshot, closes ~Aug 8 (36.7K For so far)",
+      "state": "draft"
+    },
+    {
+      "item": "2026 Board Election — CLOSED Jul 29: all five elected (Sleety, Thomas, Erick, Alperen, Julius; approval voting)",
+      "state": "quiet"
+    },
+    {
+      "item": "First $ARROW Treasury Sale Tranche 1 — PASSED Jul 22 (4.32M For / 0 Against)",
+      "state": "quiet"
+    },
+    {
+      "item": "AIP-010 Tokenomics — PASSED Jul 21, Final in dao-aips",
+      "state": "quiet"
+    },
+    {
+      "item": "$ARROW live: V4 LP since Jul 21 (~$0.19) · Blockaid flag cleared Jul 28 · CoinGecko resubmitted Aug 4 (CL0408260044)",
+      "state": "draft"
+    },
+    {
+      "item": "Compass: kickoff goals set (manufacturing AIP + contributor pipeline) · bounty creation session ran Jul 31",
+      "state": "quiet"
+    }
   ],
   "pulse": [
-    {"repo": "project-quiver", "pr": 242, "title": "docs: add Quiver attachment developer guide", "author": "leafwithered", "age": "1d"},
-    {"repo": "project-quiver", "pr": 241, "title": "docs: add platform engineering report", "author": "soaravant", "age": "2d"},
-    {"repo": "project-quiver", "pr": 235, "title": "docs: fix HAR-0014 bottom payload signal label", "author": "vector-arrow", "age": "11d"},
-    {"repo": "project-quiver", "pr": 232, "title": "V1 of Quiver initial configuration document", "author": "errrks", "age": "12d"},
-    {"repo": "project-quiver", "pr": 225, "title": "feat: per-subassembly GLB export for the docs 3D viewer", "author": "thomasgarrison", "age": "40d"},
-    {"repo": "project-quiver", "pr": 223, "title": "Added fusion link to project readme and manufacturing guide", "author": "errrks", "age": "53d"},
-    {"repo": "project-quiver", "pr": 222, "title": "docs: add PWM MAD 4x08 parameter variant", "author": "vector-arrow", "age": "62d"},
-    {"repo": "project-caribou", "pr": 55, "title": "Caribou standard parameter file (forked from Quiver)", "author": "vector-arrow", "age": "1d"},
-    {"repo": "project-caribou", "pr": 54, "title": "CBC firmware v0.1.0 (ESP32-S3): switch control, dual CAN, battery telemetry", "author": "vector-arrow", "age": "5d"},
-    {"repo": "project-spearhead", "pr": 28, "title": "ci: fix sanity checks — editorconfig and cspell excludes for vendored files", "author": "vector-arrow", "age": "1d"}
+    {
+      "repo": "project-quiver",
+      "pr": 243,
+      "title": "docs: convert GitHub-style alerts to Docusaurus admonitions in Pilot Handbook",
+      "author": "thomasgarrison",
+      "age": "0d"
+    },
+    {
+      "repo": "project-quiver",
+      "pr": 235,
+      "title": "docs: fix HAR-0014 bottom payload signal label",
+      "author": "vector-arrow",
+      "age": "26d"
+    },
+    {
+      "repo": "project-quiver",
+      "pr": 232,
+      "title": "V1 of Quiver initial configuration document",
+      "author": "errrks",
+      "age": "28d"
+    },
+    {
+      "repo": "project-quiver",
+      "pr": 225,
+      "title": "feat: per-subassembly GLB export for the docs 3D viewer",
+      "author": "thomasgarrison",
+      "age": "56d"
+    },
+    {
+      "repo": "project-caribou",
+      "pr": 55,
+      "title": "Caribou standard parameter file (forked from Quiver)",
+      "author": "vector-arrow",
+      "age": "16d"
+    },
+    {
+      "repo": "project-caribou",
+      "pr": 54,
+      "title": "CBC firmware v0.1.0 (ESP32-S3): switch control, dual CAN, battery telemetry",
+      "author": "vector-arrow",
+      "age": "20d"
+    },
+    {
+      "repo": "project-spearhead",
+      "pr": 28,
+      "title": "ci: fix sanity checks — editorconfig and cspell excludes",
+      "author": "vector-arrow",
+      "age": "16d"
+    },
+    {
+      "repo": "dao-aips",
+      "pr": 20,
+      "title": "AIP-007: add Sleety's three active projects (Compass, Media, Docs)",
+      "author": "sl33ty",
+      "age": "14d"
+    },
+    {
+      "repo": "arrow-store",
+      "pr": 9,
+      "title": "feat: redesign purchase flow — manufacturer routing, payment selection, DAO fee display",
+      "author": "waterWang",
+      "age": "2d"
+    },
+    {
+      "repo": "arrow-catalog",
+      "pr": 11,
+      "title": "Deploy scripts: Base Sepolia + local dev stack",
+      "author": "vector-arrow",
+      "age": "4d"
+    },
+    {
+      "repo": "website",
+      "pr": 213,
+      "title": "feat: exploded view, component labels and materials for the Quiver viewer",
+      "author": "sl33ty",
+      "age": "3d"
+    },
+    {
+      "repo": "website",
+      "pr": 219,
+      "title": "chore: sync bounty board data",
+      "author": "sl33ty",
+      "age": "3d"
+    }
   ],
   "calendar": [
-    {"when": "Week of Jul 20", "what": "Caribou hover testing target (short hover + incremental inputs)"},
-    {"when": "Jul 22", "what": "Treasury sale Tranche 1 Snapshot vote closes · board election nominations close 23:59 UTC"},
-    {"when": "~Jul 23–30", "what": "Board election Snapshot vote (approval voting, 5 candidates)"},
-    {"when": "Post AIP-010", "what": "Token launch push (CoinGecko/DexScreener/Twitter)"},
-    {"when": "Thu (weekly)", "what": "Quiver call"}
+    {
+      "when": "~Aug 8",
+      "what": "Business Development Snapshot vote closes"
+    },
+    {
+      "when": "~Aug 10–14",
+      "what": "Spearhead motors reshipment window (optimistic, customs permitting)"
+    },
+    {
+      "when": "Aug 14 (biweekly Fri)",
+      "what": "Compass call 11:00 CDT"
+    },
+    {
+      "when": "Thu (weekly)",
+      "what": "Quiver call"
+    },
+    {
+      "when": "Imminent",
+      "what": "Caribou PT1 first flight"
+    }
   ],
-  "treasury": {"note": "On-chain treasury reads land in v2 · AIP-009 revenue counter once the on-chain store ships (smart-contract commission flow in design)"}
+  "treasury": {
+    "note": "$ARROW/USDC V4 LP live since Jul 21 (~$0.19, ~$45K/side) · ArrowSettlement on Base Sepolia (testnet) — mainnet + AIP-009 revenue counter after Thomas signs off"
+  }
 }
