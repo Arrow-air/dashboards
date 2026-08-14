@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-05 22:50 CT",
+  "generated": "2026-08-14 11:05 CT",
   "projects": [
     {
       "name": "Quiver",
@@ -36,10 +36,20 @@
       "emoji": "🛒",
       "lead": "Thomas · Vector",
       "phase": "On-chain settlement live on Base Sepolia — full-stack USDC E2E passed (real order, real USDC, watcher → paid)",
-      "milestone": "Checkout UI done (connect→approve→settle→receipt) · receipt-NFT design + 2 PRs awaiting Thomas · Crossmint deferred",
+      "milestone": "Checkout UI done (connect→approve→settle→receipt) · purchase-flow redesign in review (arrow-store #10, waterWang) · receipt-NFT design awaiting Thomas",
       "blocker": "Production DAO fee bounds undecided (catalog 20% devkit vs 0% propellers — question with Erick)",
       "status": "active",
-      "updated": "2026-08-01"
+      "updated": "2026-08-08"
+    },
+    {
+      "name": "Flight Tracking v2",
+      "emoji": "📡",
+      "lead": "Hex · Thomas",
+      "phase": "v2 rebuilt for Openship + self-hosted Supabase (repo Arrow-air/flight-tracking) — three feedback rounds shipped Aug 12–13",
+      "milestone": "v2.3 live: .param download, aircraft-page durations, auth/admin/filters, param viewer, weather guard",
+      "blocker": "Adoption gap vs Discord/wiki · unowned-record governance hole (JIS M-40) still open from v1",
+      "status": "active",
+      "updated": "2026-08-13"
     },
     {
       "name": "Longshot",
@@ -76,15 +86,21 @@
       "where": "AIP-009 Store"
     },
     {
+      "owner": "Thomas",
+      "item": "CoinGecko resubmit after Aug 20 (14-day cooldown) with clean GoPlus console — or $199 manual review to clear the proxy flag sooner",
+      "due": "Aug 20",
+      "where": "Token"
+    },
+    {
       "owner": "Erick",
       "item": "Scope + order meetup attachment build parts (gap flagged Jul 27)",
-      "due": "this week",
+      "due": "open",
       "where": "Quiver"
     },
     {
       "owner": "Zeynep",
       "item": "OA ground commissioning — 360 lidar first, then forward radar",
-      "due": "this week",
+      "due": "open",
       "where": "Quiver"
     },
     {
@@ -102,7 +118,7 @@
     {
       "owner": "Alperen",
       "item": "Track MAD motor re-invoice/reship through customs",
-      "due": "~2 wk",
+      "due": "open",
       "where": "Spearhead"
     },
     {
@@ -110,12 +126,6 @@
       "item": "ESC extended-lead bench test (boom-mount compromise)",
       "due": "open",
       "where": "Spearhead"
-    },
-    {
-      "owner": "Thomas",
-      "item": "Merge website PR #222 (token page w/ CoinGecko request ID)",
-      "due": "open",
-      "where": "Token"
     },
     {
       "owner": "Erick + Thomas",
@@ -126,11 +136,15 @@
   ],
   "governance": [
     {
-      "item": "Business Development Project Approval — LIVE on Snapshot, closes ~Aug 8 (36.7K For so far)",
+      "item": "Caribou Phase 1 review + Phase 2 proposal published on forum (dao.arrowair.com/t/181) — Snapshot to follow",
       "state": "draft"
     },
     {
-      "item": "Caribou Phase 1 review + Phase 2 proposal published on forum (dao.arrowair.com/t/181) — Snapshot to follow",
+      "item": "Business Development Project Approval — Snapshot closed ~Aug 8 (36.7K For at close); on-chain outcome to confirm",
+      "state": "quiet"
+    },
+    {
+      "item": "$ARROW live: V4 LP since Jul 21 (~$0.19) · CoinGecko REJECTED Aug 6 (CL0408260044) — GoPlus proxy flag blocks the auto-scan; resubmit earliest Aug 20 after 14-day cooldown",
       "state": "draft"
     },
     {
@@ -146,112 +160,97 @@
       "state": "quiet"
     },
     {
-      "item": "$ARROW live: V4 LP since Jul 21 (~$0.19) · Blockaid flag cleared Jul 28 · CoinGecko resubmitted Aug 4 (CL0408260044)",
-      "state": "draft"
-    },
-    {
       "item": "Compass: kickoff goals set (manufacturing AIP + contributor pipeline) · bounty creation session ran Jul 31",
       "state": "quiet"
     }
   ],
   "pulse": [
     {
+      "repo": "flight-tracking",
+      "pr": 3,
+      "title": "v2.3: .param download + aircraft-page durations",
+      "author": "thomasgarrison",
+      "age": "1d"
+    },
+    {
+      "repo": "flight-tracking",
+      "pr": 2,
+      "title": "v2.2: feedback round 2 — durations, deletes, profile, weather guard",
+      "author": "thomasgarrison",
+      "age": "2d"
+    },
+    {
+      "repo": "flight-tracking",
+      "pr": 1,
+      "title": "v2.1: feedback round 1 — auth, admin, filters, param viewer",
+      "author": "thomasgarrison",
+      "age": "2d"
+    },
+    {
+      "repo": "website",
+      "pr": 225,
+      "title": "Add contributor profile for Mahmudsudo (new contributor)",
+      "author": "mahmudsudo",
+      "age": "0d"
+    },
+    {
+      "repo": "arrow-store",
+      "pr": 10,
+      "title": "feat: purchase flow with card + USDC on-chain payment paths",
+      "author": "waterWang",
+      "age": "6d"
+    },
+    {
+      "repo": "project-quiver",
+      "pr": 245,
+      "title": "Add payload-side clip plate STEP; point attachments to payload-systems",
+      "author": "thomasgarrison",
+      "age": "8d"
+    },
+    {
+      "repo": "project-quiver",
+      "pr": 244,
+      "title": "docs: remove dead Pixhawk log links from PT1 flight test reports",
+      "author": "thomasgarrison",
+      "age": "8d"
+    },
+    {
       "repo": "project-quiver",
       "pr": 243,
       "title": "docs: convert GitHub-style alerts to Docusaurus admonitions in Pilot Handbook",
       "author": "thomasgarrison",
-      "age": "0d"
-    },
-    {
-      "repo": "project-quiver",
-      "pr": 235,
-      "title": "docs: fix HAR-0014 bottom payload signal label",
-      "author": "vector-arrow",
-      "age": "26d"
+      "age": "7d"
     },
     {
       "repo": "project-quiver",
       "pr": 232,
       "title": "V1 of Quiver initial configuration document",
       "author": "errrks",
-      "age": "28d"
+      "age": "7d"
     },
     {
-      "repo": "project-quiver",
-      "pr": 225,
-      "title": "feat: per-subassembly GLB export for the docs 3D viewer",
-      "author": "thomasgarrison",
-      "age": "56d"
+      "repo": "website",
+      "pr": 222,
+      "title": "docs: $ARROW token page on production + CoinGecko verification info (merged)",
+      "author": "vector-arrow",
+      "age": "10d"
     },
     {
       "repo": "project-caribou",
       "pr": 55,
       "title": "Caribou standard parameter file (forked from Quiver)",
       "author": "vector-arrow",
-      "age": "16d"
-    },
-    {
-      "repo": "project-caribou",
-      "pr": 54,
-      "title": "CBC firmware v0.1.0 (ESP32-S3): switch control, dual CAN, battery telemetry",
-      "author": "vector-arrow",
-      "age": "20d"
-    },
-    {
-      "repo": "project-spearhead",
-      "pr": 28,
-      "title": "ci: fix sanity checks — editorconfig and cspell excludes",
-      "author": "vector-arrow",
-      "age": "16d"
-    },
-    {
-      "repo": "dao-aips",
-      "pr": 20,
-      "title": "AIP-007: add Sleety's three active projects (Compass, Media, Docs)",
-      "author": "sl33ty",
-      "age": "14d"
-    },
-    {
-      "repo": "arrow-store",
-      "pr": 9,
-      "title": "feat: redesign purchase flow — manufacturer routing, payment selection, DAO fee display",
-      "author": "waterWang",
-      "age": "2d"
-    },
-    {
-      "repo": "arrow-catalog",
-      "pr": 11,
-      "title": "Deploy scripts: Base Sepolia + local dev stack",
-      "author": "vector-arrow",
-      "age": "4d"
-    },
-    {
-      "repo": "website",
-      "pr": 213,
-      "title": "feat: exploded view, component labels and materials for the Quiver viewer",
-      "author": "sl33ty",
-      "age": "3d"
-    },
-    {
-      "repo": "website",
-      "pr": 219,
-      "title": "chore: sync bounty board data",
-      "author": "sl33ty",
-      "age": "3d"
+      "age": "25d"
     }
   ],
   "calendar": [
     {
-      "when": "~Aug 8",
-      "what": "Business Development Snapshot vote closes"
-    },
-    {
-      "when": "~Aug 10–14",
-      "what": "Spearhead motors reshipment window (optimistic, customs permitting)"
-    },
-    {
       "when": "Aug 14 (biweekly Fri)",
       "what": "Compass call 11:00 CDT"
+    },
+    {
+      "when": "Aug 20",
+      "what": "Earliest CoinGecko resubmit (GoPlus cooldown ends)"
     },
     {
       "when": "Thu (weekly)",
