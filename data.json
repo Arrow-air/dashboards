@@ -1,15 +1,15 @@
 {
-  "generated": "2026-08-14 11:05 CT",
+  "generated": "2026-08-20 14:20 CT",
   "projects": [
     {
       "name": "Quiver",
       "emoji": "🚁",
       "lead": "Erick · Alperen",
-      "phase": "Devkit phase — flight ops in Houston; OA testing restarting (ground-first, one sensor at a time)",
-      "milestone": "OA ground commissioning (360 lidar → forward radar) · meetup attachment build being scoped by Erick",
-      "blocker": "HOU GPS2 EMI unresolved (armed-only velocity excursions; config + relocation tried, Texas build healthy) · attachment-interface supplier link still dead",
+      "phase": "Devkit phase — Houston flight ops; OA flight portion cleared (Zeynep reviewed ground portion). Aug 20 meetup: 3 of 4 attachments built, 2 flying",
+      "milestone": "Meetup attachments: Latch V1 + NIR camera V1 flew/working (camera on Gray's drone); Starlink built but camera stream kills the link (regulator suspected, Thomas re-testing); dispenser untouched. Arch calls: HV-out + payload-side regulation is the pattern; mechanical attachment interface due a redesign",
+      "blocker": "HOU GPS: likely root cause found — Ethernet-switch RF noise jamming the M9N (0 sats w/ switches vs ~20; disconnect test + standoffs/PETG-lid pending). Attachment-interface supplier link still dead",
       "status": "active",
-      "updated": "2026-07-27"
+      "updated": "2026-08-20"
     },
     {
       "name": "Spearhead",
@@ -25,21 +25,21 @@
       "name": "Caribou",
       "emoji": "🛗",
       "lead": "Julius",
-      "phase": "Phase 1 ENDED Jul 31 — PT1 assembled, pre-first-flight bench log clean; Phase 2 proposal on forum (Sep 2026–Feb 2027)",
-      "milestone": "Phase 2 (4 steps): PT1 flight campaign → PT1.5 build in USA (T40 bays) → PT1 retrofit → community-build docs · Snapshot after forum discussion",
-      "blocker": "—",
+      "phase": "Phase 1 ENDED Jul 31 — PT1 assembled, bench log clean; Phase 2 proposal on forum (Sep 2026–Feb 2027). LBA SORA package submission-ready (jfw operator: application + matrix + dipul area + 89-pg OM)",
+      "milestone": "Phase 2 (4 steps): PT1 flight campaign → PT1.5 build in USA (T40 bays) → PT1 retrofit → community-build docs · SORA → Julius's identity fields + signatures, then submit to LBA",
+      "blocker": "First flight gated on LBA operational authorization · RID scanner purchase (#57) open · fence-param conformity record before first flight",
       "status": "active",
-      "updated": "2026-08-05"
+      "updated": "2026-08-20"
     },
     {
       "name": "AIP-009 Store",
       "emoji": "🛒",
       "lead": "Thomas · Vector",
-      "phase": "On-chain settlement live on Base Sepolia — full-stack USDC E2E passed (real order, real USDC, watcher → paid)",
-      "milestone": "Checkout UI done (connect→approve→settle→receipt) · purchase-flow redesign in review (arrow-store #10, waterWang) · receipt-NFT design awaiting Thomas",
+      "phase": "On-chain settlement live on Base Sepolia — full-stack USDC E2E passed. ICAO manufacturer serial prefix received — only the FAA filing stands before real devkit sales",
+      "milestone": "Checkout UI done (connect→approve→settle→receipt) · purchase-flow redesign in review (arrow-store #10, waterWang) · Dock V0 starting under Javelina Propeller Laboratory (RTK trough-landing gate; leg-contact charging, Longshot-compatible)",
       "blocker": "Production DAO fee bounds undecided (catalog 20% devkit vs 0% propellers — question with Erick)",
       "status": "active",
-      "updated": "2026-08-08"
+      "updated": "2026-08-20"
     },
     {
       "name": "Flight Tracking v2",
@@ -55,11 +55,11 @@
       "name": "Longshot",
       "emoji": "🔋",
       "lead": "Julius",
-      "phase": "Design — custom 21700 pack (14S9P, 126 cells, ~2.2–2.3 kWh)",
-      "milestone": "PT1 nearing finish; BMS v0 dummy → v1 STM32 smart BMS · cell pick deferred to prototype",
+      "phase": "Design — custom 21700 pack (14S9P, 126 cells, ~2.2–2.3 kWh); first pack printing (~90%)",
+      "milestone": "First pack printing; BMS v0 dummy → v1 STM32 smart BMS · cell pick deferred to prototype",
       "blocker": "Paused while Caribou occupies Julius",
       "status": "parked",
-      "updated": "2026-08-03"
+      "updated": "2026-08-20"
     },
     {
       "name": "Arrow Spreader (Javelina)",
@@ -98,21 +98,21 @@
       "where": "Quiver"
     },
     {
-      "owner": "Zeynep",
-      "item": "OA ground commissioning — 360 lidar first, then forward radar",
-      "due": "open",
+      "owner": "Erick",
+      "item": "HOU GPS: Ethernet-switch disconnect test to confirm RF-noise root cause (0 sats w/ switches vs ~20); standoffs/PETG lid if confirmed",
+      "due": "this week",
       "where": "Quiver"
     },
     {
-      "owner": "Erick + Zeynep",
-      "item": "HOU GPS2 EMI: static MK32/air-unit on/off test + node-level GNSS config check",
+      "owner": "Erick",
+      "item": "Post meetup attachment info notes + GitHub uploads (Latch V1, NIR camera V1)",
       "due": "open",
       "where": "Quiver"
     },
     {
       "owner": "Julius",
-      "item": "Caribou PT1 first flight (bench log cleared Jul 31)",
-      "due": "imminent",
+      "item": "Caribou SORA: fill jfw identity fields + signatures → submit to LBA (package otherwise submission-ready)",
+      "due": "open",
       "where": "Caribou"
     },
     {
@@ -144,7 +144,7 @@
       "state": "quiet"
     },
     {
-      "item": "$ARROW live: V4 LP since Jul 21 (~$0.19) · CoinGecko REJECTED Aug 6 (CL0408260044) — GoPlus proxy flag blocks the auto-scan; resubmit earliest Aug 20 after 14-day cooldown",
+      "item": "$ARROW live: V4 LP since Jul 21 (~$0.19) · CoinGecko resubmit window now OPEN (Aug 20 cooldown elapsed) — pending clean GoPlus console (proxy flag) before re-filing; $199 manual-review is the fallback lever",
       "state": "draft"
     },
     {
@@ -162,6 +162,10 @@
     {
       "item": "Compass: kickoff goals set (manufacturing AIP + contributor pipeline) · bounty creation session ran Jul 31",
       "state": "quiet"
+    },
+    {
+      "item": "OA/Quiver funding proposal STILL unpublished — third slip, deadline end of this week (watch)",
+      "state": "draft"
     }
   ],
   "pulse": [
@@ -170,35 +174,35 @@
       "pr": 3,
       "title": "v2.3: .param download + aircraft-page durations",
       "author": "thomasgarrison",
-      "age": "1d"
+      "age": "7d"
     },
     {
       "repo": "flight-tracking",
       "pr": 2,
       "title": "v2.2: feedback round 2 — durations, deletes, profile, weather guard",
       "author": "thomasgarrison",
-      "age": "2d"
+      "age": "8d"
     },
     {
       "repo": "flight-tracking",
       "pr": 1,
       "title": "v2.1: feedback round 1 — auth, admin, filters, param viewer",
       "author": "thomasgarrison",
-      "age": "2d"
+      "age": "8d"
     },
     {
       "repo": "website",
       "pr": 225,
       "title": "Add contributor profile for Mahmudsudo (new contributor)",
       "author": "mahmudsudo",
-      "age": "0d"
+      "age": "6d"
     },
     {
       "repo": "arrow-store",
       "pr": 10,
       "title": "feat: purchase flow with card + USDC on-chain payment paths",
       "author": "waterWang",
-      "age": "6d"
+      "age": "12d"
     },
     {
       "repo": "project-quiver",
