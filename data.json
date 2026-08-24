@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-20 14:20 CT",
+  "generated": "2026-08-24 11:45 CT",
   "projects": [
     {
       "name": "Quiver",
@@ -15,11 +15,11 @@
       "name": "Spearhead",
       "emoji": "✈️",
       "lead": "Alperen · Zeynep",
-      "phase": "PT1 build — fuselage ready to glue, wing ribs cut, skins printing (PLA Aero); design frozen",
-      "milestone": "MAD re-invoices motors as 'electric motors' + reships (~2 wk optimistic) · ESC placement compromise: boom-mounted ~60cm leads, bench test first",
-      "blocker": "Motors/ESCs REJECTED by Turkish customs (returned to Poland) · KDE cap-bank sizing unverified · tail CAN→PWM converter lost its power tap",
+      "phase": "PT1 build — wings + tail wrapped and judged sturdy; flight weekend set Aug 28–31 (Zeynep in Ankara from Fri), flying on KDE fallback motors",
+      "milestone": "Flight weekend Aug 28–31: assemble → ground run → flights on KDE fallback motors · connector-planning call Thu Aug 27 9AM CT (every connection walked, JST-PH/XH/SH + solder-spliced hybrids) · new printed control horns then joint wrap session · capacity-report application targeted before the weekend",
+      "blocker": "MAD motor parcel still stuck in Poland behind a DHL storage-charge invoice (KDE fallback in use) · control surfaces blocked by mounted horns (Oracover needs a clean wing box) · landing gear being redesigned",
       "status": "active",
-      "updated": "2026-07-28"
+      "updated": "2026-08-24"
     },
     {
       "name": "Caribou",
@@ -117,7 +117,7 @@
     },
     {
       "owner": "Alperen",
-      "item": "Track MAD motor re-invoice/reship through customs",
+      "item": "Clear MAD motor parcel out of Poland (DHL storage-charge invoice) — KDE fallback flying the Aug 28–31 weekend meanwhile",
       "due": "open",
       "where": "Spearhead"
     },
@@ -249,12 +249,12 @@
   ],
   "calendar": [
     {
-      "when": "Aug 14 (biweekly Fri)",
-      "what": "Compass call 11:00 CDT"
+      "when": "Thu Aug 27 (9AM CT)",
+      "what": "Spearhead connector-planning call"
     },
     {
-      "when": "Aug 20",
-      "what": "Earliest CoinGecko resubmit (GoPlus cooldown ends)"
+      "when": "Aug 28–31",
+      "what": "Spearhead flight weekend (assemble → ground run → flights)"
     },
     {
       "when": "Thu (weekly)",
@@ -262,7 +262,7 @@
     },
     {
       "when": "Imminent",
-      "what": "Caribou PT1 first flight"
+      "what": "Caribou PT1 first flight (gated on LBA authorization)"
     }
   ],
   "treasury": {
