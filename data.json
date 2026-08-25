@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24 11:45 CT",
+  "generated": "2026-08-25 11:30 CT",
   "projects": [
     {
       "name": "Quiver",
@@ -7,7 +7,7 @@
       "lead": "Erick · Alperen",
       "phase": "Devkit phase — Houston flight ops; OA flight portion cleared (Zeynep reviewed ground portion). Aug 20 meetup: 3 of 4 attachments built, 2 flying",
       "milestone": "Meetup attachments: Latch V1 + NIR camera V1 flew/working (camera on Gray's drone); Starlink built but camera stream kills the link (regulator suspected, Thomas re-testing); dispenser untouched. Arch calls: HV-out + payload-side regulation is the pattern; mechanical attachment interface due a redesign",
-      "blocker": "HOU GPS: likely root cause found — Ethernet-switch RF noise jamming the M9N (0 sats w/ switches vs ~20; disconnect test + standoffs/PETG-lid pending). Attachment-interface supplier link still dead",
+      "blocker": "HOU GPS: Ethernet-switch RF-noise hypothesis now disputed — Julius flew the same switches on Kestrel with zero M9N issues; root cause still open (Kestrel logs → Erick; magnetometer-EMI sub-question). Attachment-interface supplier link still dead",
       "status": "active",
       "updated": "2026-08-20"
     },
@@ -25,11 +25,11 @@
       "name": "Caribou",
       "emoji": "🛗",
       "lead": "Julius",
-      "phase": "Phase 1 ENDED Jul 31 — PT1 assembled, bench log clean; Phase 2 proposal on forum (Sep 2026–Feb 2027). LBA SORA package submission-ready (jfw operator: application + matrix + dipul area + 89-pg OM)",
-      "milestone": "Phase 2 (4 steps): PT1 flight campaign → PT1.5 build in USA (T40 bays) → PT1 retrofit → community-build docs · SORA → Julius's identity fields + signatures, then submit to LBA",
-      "blocker": "First flight gated on LBA operational authorization · RID scanner purchase (#57) open · fence-param conformity record before first flight",
+      "phase": "Phase 1 ENDED Jul 31 — PT1 assembled; Phase 2 Snapshot LIVE (closes Sep 1). German LBA site-approval application SUBMITTED (jfw operator, untethered fast-track, ~a few weeks)",
+      "milestone": "Phase 2 (4 steps): PT1 flight campaign → PT1.5 build in USA (T40 bays) → PT1 retrofit → community-build docs · Docs split: Erick updates electrical-architecture doc (Vector fills gaps), Julius publishes operator's manual",
+      "blocker": "First flight gated on LBA authorization (application submitted) · RID scanner purchase (#57) open · fence-param conformity record before first flight",
       "status": "active",
-      "updated": "2026-08-20"
+      "updated": "2026-08-25"
     },
     {
       "name": "AIP-009 Store",
@@ -136,8 +136,8 @@
   ],
   "governance": [
     {
-      "item": "Caribou Phase 1 review + Phase 2 proposal published on forum (dao.arrowair.com/t/181) — Snapshot to follow",
-      "state": "draft"
+      "item": "Caribou Phase 2 — Snapshot LIVE, closes Sep 1 (low turnout ~4 votes; needs a community reminder)",
+      "state": "active"
     },
     {
       "item": "Business Development Project Approval — Snapshot closed ~Aug 8 (36.7K For at close); on-chain outcome to confirm",
@@ -259,6 +259,10 @@
     {
       "when": "Thu (weekly)",
       "what": "Quiver call"
+    },
+    {
+      "when": "Sep 1",
+      "what": "Caribou Phase 2 Snapshot closes (low turnout — reminder needed)"
     },
     {
       "when": "Imminent",
