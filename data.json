@@ -1,15 +1,15 @@
 {
-  "generated": "2026-08-25 11:30 CT",
+  "generated": "2026-08-27 14:10 CT",
   "projects": [
     {
       "name": "Quiver",
       "emoji": "🚁",
       "lead": "Erick · Alperen",
-      "phase": "Devkit phase — Houston flight ops; OA flight portion cleared (Zeynep reviewed ground portion). Aug 20 meetup: 3 of 4 attachments built, 2 flying",
-      "milestone": "Meetup attachments: Latch V1 + NIR camera V1 flew/working (camera on Gray's drone); Starlink built but camera stream kills the link (regulator suspected, Thomas re-testing); dispenser untouched. Arch calls: HV-out + payload-side regulation is the pattern; mechanical attachment interface due a redesign",
-      "blocker": "HOU GPS: Ethernet-switch RF-noise hypothesis now disputed — Julius flew the same switches on Kestrel with zero M9N issues; root cause still open (Kestrel logs → Erick; magnetometer-EMI sub-question). Attachment-interface supplier link still dead",
+      "phase": "Devkit phase — Houston flight ops. OA collision-avoidance tests 1–3 done (phantom ≤30m front-radar returns persist); test 4 (first steering test) gated on Zeynep's review. Remote ID: omnidirectional test is the last one",
+      "milestone": "Commercial: Remote ID omnidirectional test → FAA filing expected ~Aug 28–29 → devkit sales days away. Aug 20 meetup attachments: Latch V1 + NIR camera V1 flew; Starlink camera stream kills the link (regulator suspected); dispenser untouched. Arch: HV-out + payload-side regulation; attachment interface due a redesign",
+      "blocker": "HOU GPS discriminator: both affected builds were Erick-configured; Julius's builds (more Ethernet HW active, incl. RID flights) are clean + Kestrel logs immaculate — config error now leads over RF (param diff → switch sourcing → shielding; scope purchase agreed, Keysight ~$600). Attachment-interface supplier link still dead",
       "status": "active",
-      "updated": "2026-08-20"
+      "updated": "2026-08-27"
     },
     {
       "name": "Spearhead",
@@ -35,11 +35,11 @@
       "name": "AIP-009 Store",
       "emoji": "🛒",
       "lead": "Thomas · Vector",
-      "phase": "On-chain settlement live on Base Sepolia — full-stack USDC E2E passed. ICAO manufacturer serial prefix received — only the FAA filing stands before real devkit sales",
+      "phase": "On-chain settlement live on Base Sepolia — full-stack USDC E2E passed. ICAO manufacturer serial prefix received; FAA filing expected ~Aug 28–29 (gated on Quiver's last Remote ID test) → real devkit sales days away",
       "milestone": "Checkout UI done (connect→approve→settle→receipt) · purchase-flow redesign in review (arrow-store #10, waterWang) · Dock V0 starting under Javelina Propeller Laboratory (RTK trough-landing gate; leg-contact charging, Longshot-compatible)",
       "blocker": "Production DAO fee bounds undecided (catalog 20% devkit vs 0% propellers — question with Erick)",
       "status": "active",
-      "updated": "2026-08-20"
+      "updated": "2026-08-27"
     },
     {
       "name": "Flight Tracking v2",
@@ -164,7 +164,7 @@
       "state": "quiet"
     },
     {
-      "item": "OA/Quiver funding proposal STILL unpublished — third slip, deadline end of this week (watch)",
+      "item": "OA/Quiver funding proposal STILL unpublished — 3+ weeks slipped (acknowledged unprompted again Aug 27); gates the roadmap Thomas asked for Aug 4",
       "state": "draft"
     }
   ],
@@ -255,6 +255,10 @@
     {
       "when": "Aug 28–31",
       "what": "Spearhead flight weekend (assemble → ground run → flights)"
+    },
+    {
+      "when": "~Aug 28–29",
+      "what": "Quiver FAA Remote ID filing (last omni test → devkit sales days away)"
     },
     {
       "when": "Thu (weekly)",
