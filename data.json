@@ -1,12 +1,12 @@
 {
-  "generated": "2026-08-27 14:10 CT",
+  "generated": "2026-08-28 10:45 CT",
   "projects": [
     {
       "name": "Quiver",
       "emoji": "🚁",
       "lead": "Erick · Alperen",
       "phase": "Devkit phase — Houston flight ops. OA collision-avoidance tests 1–3 done (phantom ≤30m front-radar returns persist); test 4 (first steering test) gated on Zeynep's review. Remote ID: omnidirectional test is the last one",
-      "milestone": "Commercial: Remote ID omnidirectional test → FAA filing expected ~Aug 28–29 → devkit sales days away. Aug 20 meetup attachments: Latch V1 + NIR camera V1 flew; Starlink camera stream kills the link (regulator suspected); dispenser untouched. Arch: HV-out + payload-side regulation; attachment interface due a redesign",
+      "milestone": "Commercial: Thomas FILED the FAA declaration morning of Aug 28 — declaration approval is now the last gate before ICAO serials + registration + devkit sales. Aug 20 meetup attachments: Latch V1 + NIR camera V1 flew; Starlink camera stream kills the link (regulator suspected); dispenser untouched. Arch: HV-out + payload-side regulation; attachment interface due a redesign",
       "blocker": "HOU GPS discriminator: both affected builds were Erick-configured; Julius's builds (more Ethernet HW active, incl. RID flights) are clean + Kestrel logs immaculate — config error now leads over RF (param diff → switch sourcing → shielding; scope purchase agreed, Keysight ~$600). Attachment-interface supplier link still dead",
       "status": "active",
       "updated": "2026-08-27"
@@ -15,11 +15,11 @@
       "name": "Spearhead",
       "emoji": "✈️",
       "lead": "Alperen · Zeynep",
-      "phase": "PT1 build — wings + tail wrapped and judged sturdy; flight weekend set Aug 28–31 (Zeynep in Ankara from Fri), flying on KDE fallback motors",
-      "milestone": "Flight weekend Aug 28–31: assemble → ground run → flights on KDE fallback motors · connector-planning call Thu Aug 27 9AM CT (every connection walked, JST-PH/XH/SH + solder-spliced hybrids) · new printed control horns then joint wrap session · capacity-report application targeted before the weekend",
-      "blocker": "MAD motor parcel still stuck in Poland behind a DHL storage-charge invoice (KDE fallback in use) · control surfaces blocked by mounted horns (Oracover needs a clean wing box) · landing gear being redesigned",
+      "phase": "PT1 live build weekend — wings (1.4m, yellow Oracover) handover Fri; flight attempt Mon Aug 31; HARD STOP Tue Sep 1 noon (Zeynep's wedding). First flights wings-off AND skinless (bare structure = visible failure origin), on KDE fallback motors",
+      "milestone": "Connector architecture LOCKED (Aug 27 call): QS8 battery→Matek PDB, XT90-F live side, XT60 FC power, tail converter own HV run, 2× PWM breakouts → 1 CAN when MAD motors land, soldered sense harness. Resolved: wings-off first flight (both leads), PCB-mount XT physically impossible (soldered cables = intent), skin salvage works (~1mo printing saved)",
+      "blocker": "Repaired RC stick unverified in sim · new XT60W 3-pin ESC connectors team-untested across all 4 motors · MAD motor parcel still stuck in Poland (DHL storage charge; KDE fallback flying)",
       "status": "active",
-      "updated": "2026-08-24"
+      "updated": "2026-08-28"
     },
     {
       "name": "Caribou",
@@ -35,7 +35,7 @@
       "name": "AIP-009 Store",
       "emoji": "🛒",
       "lead": "Thomas · Vector",
-      "phase": "On-chain settlement live on Base Sepolia — full-stack USDC E2E passed. ICAO manufacturer serial prefix received; FAA filing expected ~Aug 28–29 (gated on Quiver's last Remote ID test) → real devkit sales days away",
+      "phase": "On-chain settlement live on Base Sepolia — full-stack USDC E2E passed. FAA declaration FILED Aug 28 (approval = last gate) → then ICAO serials + registration + real devkit sales",
       "milestone": "Checkout UI done (connect→approve→settle→receipt) · purchase-flow redesign in review (arrow-store #10, waterWang) · Dock V0 starting under Javelina Propeller Laboratory (RTK trough-landing gate; leg-contact charging, Longshot-compatible)",
       "blocker": "Production DAO fee bounds undecided (catalog 20% devkit vs 0% propellers — question with Erick)",
       "status": "active",
@@ -249,16 +249,12 @@
   ],
   "calendar": [
     {
-      "when": "Thu Aug 27 (9AM CT)",
-      "what": "Spearhead connector-planning call"
+      "when": "Aug 28 (done)",
+      "what": "FAA declaration FILED — approval is the last gate before devkit sales"
     },
     {
-      "when": "Aug 28–31",
-      "what": "Spearhead flight weekend (assemble → ground run → flights)"
-    },
-    {
-      "when": "~Aug 28–29",
-      "what": "Quiver FAA Remote ID filing (last omni test → devkit sales days away)"
+      "when": "Mon Aug 31",
+      "what": "Spearhead first flight attempt (wings-off + skinless; hard stop Sep 1 noon)"
     },
     {
       "when": "Thu (weekly)",
