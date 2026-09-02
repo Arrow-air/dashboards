@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-28 10:45 CT",
+  "generated": "2026-09-02 09:30 CT",
   "projects": [
     {
       "name": "Quiver",
@@ -15,7 +15,7 @@
       "name": "Spearhead",
       "emoji": "✈️",
       "lead": "Alperen · Zeynep",
-      "phase": "PT1 live build weekend — wings (1.4m, yellow Oracover) handover Fri; flight attempt Mon Aug 31; HARD STOP Tue Sep 1 noon (Zeynep's wedding). First flights wings-off AND skinless (bare structure = visible failure origin), on KDE fallback motors",
+      "phase": "PT1 build weekend done — first flight attempt was Mon Aug 31 (wings-off + skinless, KDE fallback). RESULT NOT YET REPORTED: no one from the build was on the Sep 1 call; team offline for Alperen's wedding (Sep 1 noon TR). Watching #spearhead + next transcript",
       "milestone": "Connector architecture LOCKED (Aug 27 call): QS8 battery→Matek PDB, XT90-F live side, XT60 FC power, tail converter own HV run, 2× PWM breakouts → 1 CAN when MAD motors land, soldered sense harness. Resolved: wings-off first flight (both leads), PCB-mount XT physically impossible (soldered cables = intent), skin salvage works (~1mo printing saved)",
       "blocker": "Repaired RC stick unverified in sim · new XT60W 3-pin ESC connectors team-untested across all 4 motors · MAD motor parcel still stuck in Poland (DHL storage charge; KDE fallback flying)",
       "status": "active",
@@ -25,7 +25,7 @@
       "name": "Caribou",
       "emoji": "🛗",
       "lead": "Julius",
-      "phase": "Phase 1 ENDED Jul 31 — PT1 assembled; Phase 2 Snapshot LIVE (closes Sep 1). German LBA site-approval application SUBMITTED (jfw operator, untethered fast-track, ~a few weeks)",
+      "phase": "Phase 1 ENDED Jul 31 — PT1 assembled; Phase 2 Snapshot CLOSED Sep 1 (low turnout ~4 votes; outcome to confirm). German LBA site-approval application SUBMITTED (jfw operator, untethered fast-track, ~a few weeks)",
       "milestone": "Phase 2 (4 steps): PT1 flight campaign → PT1.5 build in USA (T40 bays) → PT1 retrofit → community-build docs · Docs split: Erick updates electrical-architecture doc (Vector fills gaps), Julius publishes operator's manual",
       "blocker": "First flight gated on LBA authorization (application submitted) · RID scanner purchase (#57) open · fence-param conformity record before first flight",
       "status": "active",
@@ -55,11 +55,11 @@
       "name": "Longshot",
       "emoji": "🔋",
       "lead": "Julius",
-      "phase": "Design — custom 21700 pack (14S9P, 126 cells, ~2.2–2.3 kWh); first pack printing (~90%)",
-      "milestone": "First pack printing; BMS v0 dummy → v1 STM32 smart BMS · cell pick deferred to prototype",
-      "blocker": "Paused while Caribou occupies Julius",
+      "phase": "PT1 COMPLETE (Aug 29) — first custom 21700 pack (14S9P, 126 cells, BAK 65E) built; final weight locked 11.2 kg with ~2,540 Wh usable (+59% vs Tattu 4.0's ~1,596 Wh at ~same mass)",
+      "milestone": "Full weight table + property comparison in longshot #26 (reopened for itemization convergence, ~364 g unaccounted: fuse/wiring/screws/sensors/clip/feet). Note: Longshot = standard Li-ion (58.8V full) vs Tattu LiHV (~60.9V) — chargers/docks must handle both. BMS v0 dummy → v1 STM32 smart next",
+      "blocker": "Further work paused while Caribou occupies Julius",
       "status": "parked",
-      "updated": "2026-08-20"
+      "updated": "2026-08-29"
     },
     {
       "name": "Arrow Spreader (Javelina)",
@@ -84,6 +84,12 @@
       "item": "Production DAO fee bounds (20% devkit vs 0% propellers data points)",
       "due": "open",
       "where": "AIP-009 Store"
+    },
+    {
+      "owner": "Erick",
+      "item": "Set QGB-02 (OA bounty #203) scope/split — two contributor PRs now open (#246 mahmudsudo docs/native-SITL, #247 karanp0202 test-kit); #247 also needs CLA signed",
+      "due": "open",
+      "where": "Quiver"
     },
     {
       "owner": "Thomas",
@@ -136,8 +142,12 @@
   ],
   "governance": [
     {
-      "item": "Caribou Phase 2 — Snapshot LIVE, closes Sep 1 (low turnout ~4 votes; needs a community reminder)",
+      "item": "Funding model restructure (announced Sep 1 Quiver call): monthly streams END after the July+Aug payout → September moves to per-task / pay-on-completion; Erick to assign work proactively. Full discussion set for Thursday — absent principals (Thomas/Julius/Alperen/Zeynep) need to weigh in",
       "state": "active"
+    },
+    {
+      "item": "Caribou Phase 2 — Snapshot CLOSED Sep 1 (ran low-turnout ~4 votes); on-chain outcome to confirm",
+      "state": "quiet"
     },
     {
       "item": "Business Development Project Approval — Snapshot closed ~Aug 8 (36.7K For at close); on-chain outcome to confirm",
@@ -170,99 +180,82 @@
   ],
   "pulse": [
     {
+      "repo": "project-quiver",
+      "pr": 246,
+      "title": "QGB-02: fix stale SF45B-proxy SITL guidance → native sim:rplidars2 (reviewed, endorsed)",
+      "author": "mahmudsudo",
+      "age": "2d"
+    },
+    {
+      "repo": "project-quiver",
+      "pr": 247,
+      "title": "QGB-02: OA test kit + Texas-baseline params + analysis tools (reviewed; CLA + scope open)",
+      "author": "karanp0202",
+      "age": "2d"
+    },
+    {
       "repo": "flight-tracking",
       "pr": 3,
       "title": "v2.3: .param download + aircraft-page durations",
       "author": "thomasgarrison",
-      "age": "7d"
+      "age": "11d"
     },
     {
       "repo": "flight-tracking",
       "pr": 2,
       "title": "v2.2: feedback round 2 — durations, deletes, profile, weather guard",
       "author": "thomasgarrison",
-      "age": "8d"
+      "age": "13d"
     },
     {
       "repo": "flight-tracking",
       "pr": 1,
       "title": "v2.1: feedback round 1 — auth, admin, filters, param viewer",
       "author": "thomasgarrison",
-      "age": "8d"
-    },
-    {
-      "repo": "website",
-      "pr": 225,
-      "title": "Add contributor profile for Mahmudsudo (new contributor)",
-      "author": "mahmudsudo",
-      "age": "6d"
+      "age": "13d"
     },
     {
       "repo": "arrow-store",
       "pr": 10,
       "title": "feat: purchase flow with card + USDC on-chain payment paths",
       "author": "waterWang",
-      "age": "12d"
+      "age": "17d"
     },
     {
       "repo": "project-quiver",
       "pr": 245,
       "title": "Add payload-side clip plate STEP; point attachments to payload-systems",
       "author": "thomasgarrison",
-      "age": "8d"
-    },
-    {
-      "repo": "project-quiver",
-      "pr": 244,
-      "title": "docs: remove dead Pixhawk log links from PT1 flight test reports",
-      "author": "thomasgarrison",
-      "age": "8d"
-    },
-    {
-      "repo": "project-quiver",
-      "pr": 243,
-      "title": "docs: convert GitHub-style alerts to Docusaurus admonitions in Pilot Handbook",
-      "author": "thomasgarrison",
-      "age": "7d"
+      "age": "13d"
     },
     {
       "repo": "project-quiver",
       "pr": 232,
       "title": "V1 of Quiver initial configuration document",
       "author": "errrks",
-      "age": "7d"
-    },
-    {
-      "repo": "website",
-      "pr": 222,
-      "title": "docs: $ARROW token page on production + CoinGecko verification info (merged)",
-      "author": "vector-arrow",
-      "age": "10d"
-    },
-    {
-      "repo": "project-caribou",
-      "pr": 55,
-      "title": "Caribou standard parameter file (forked from Quiver)",
-      "author": "vector-arrow",
-      "age": "25d"
+      "age": "12d"
     }
   ],
   "calendar": [
     {
       "when": "Aug 28 (done)",
-      "what": "FAA declaration FILED — approval is the last gate before devkit sales"
+      "what": "FAA declaration FILED — approval still pending; it's the last gate before devkit sales"
     },
     {
-      "when": "Mon Aug 31",
-      "what": "Spearhead first flight attempt (wings-off + skinless; hard stop Sep 1 noon)"
+      "when": "Aug 31 (result pending)",
+      "what": "Spearhead first flight attempt (wings-off + skinless) — no result yet; team offline for Alperen's wedding Sep 1"
+    },
+    {
+      "when": "Sep 1 (done)",
+      "what": "Caribou Phase 2 Snapshot CLOSED (low turnout ~4 votes; outcome to confirm)"
+    },
+    {
+      "when": "Thu (this week)",
+      "what": "Funding-model restructure discussion (streams → per-task) — principals to weigh in"
     },
     {
       "when": "Thu (weekly)",
       "what": "Quiver call"
-    },
-    {
-      "when": "Sep 1",
-      "what": "Caribou Phase 2 Snapshot closes (low turnout — reminder needed)"
     },
     {
       "when": "Imminent",
