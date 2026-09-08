@@ -15,11 +15,11 @@
       "name": "Spearhead",
       "emoji": "✈️",
       "lead": "Alperen · Zeynep",
-      "phase": "PT1 build weekend done — first flight attempt was Mon Aug 31 (wings-off + skinless, KDE fallback). RESULT NOT YET REPORTED: no one from the build was on the Sep 1 call; team offline for Alperen's wedding (Sep 1 noon TR). Watching #spearhead + next transcript",
+      "phase": "FIRST FLIGHT ACHIEVED (confirmed Sep 8 Quiver call — Erick congratulated Alperen; flight details/duration/behaviour still pending). PT1 flew wings-off + skinless on KDE fallback motors. Awaiting the Spearhead transcript for specifics",
       "milestone": "Connector architecture LOCKED (Aug 27 call): QS8 battery→Matek PDB, XT90-F live side, XT60 FC power, tail converter own HV run, 2× PWM breakouts → 1 CAN when MAD motors land, soldered sense harness. Resolved: wings-off first flight (both leads), PCB-mount XT physically impossible (soldered cables = intent), skin salvage works (~1mo printing saved)",
       "blocker": "Repaired RC stick unverified in sim · new XT60W 3-pin ESC connectors team-untested across all 4 motors · MAD motor parcel still stuck in Poland (DHL storage charge; KDE fallback flying)",
       "status": "active",
-      "updated": "2026-08-28"
+      "updated": "2026-09-08"
     },
     {
       "name": "Caribou",
@@ -142,7 +142,7 @@
   ],
   "governance": [
     {
-      "item": "Funding model restructure (announced Sep 1 Quiver call): monthly streams END after the July+Aug payout → September moves to per-task / pay-on-completion; Erick to assign work proactively. Full discussion set for Thursday — absent principals (Thomas/Julius/Alperen/Zeynep) need to weigh in",
+      "item": "Funding model restructure — Erick's proposal + August progress report PUBLISHED; Snapshot now LIVE (Sep 8). Monthly streams END after July+Aug payout → September moves to per-task / pay-on-completion, Erick assigns work proactively. Task list → GitHub issues this week. Community vote open",
       "state": "active"
     },
     {
@@ -174,8 +174,8 @@
       "state": "quiet"
     },
     {
-      "item": "OA/Quiver funding proposal STILL unpublished — 3+ weeks slipped (acknowledged unprompted again Aug 27); gates the roadmap Thomas asked for Aug 4",
-      "state": "draft"
+      "item": "OA/Quiver funding proposal PUBLISHED (Sep 8) — folded into Erick's funding-restructure Snapshot after a 3+ week slip; the roadmap Thomas asked for Aug 4 is now on the ballot",
+      "state": "active"
     }
   ],
   "pulse": [
@@ -242,16 +242,16 @@
       "what": "FAA declaration FILED — approval still pending; it's the last gate before devkit sales"
     },
     {
-      "when": "Aug 31 (result pending)",
-      "what": "Spearhead first flight attempt (wings-off + skinless) — no result yet; team offline for Alperen's wedding Sep 1"
+      "when": "Aug 31 (flew ✅)",
+      "what": "Spearhead FIRST FLIGHT achieved (wings-off + skinless) — confirmed Sep 8; flight details still pending"
     },
     {
       "when": "Sep 1 (done)",
       "what": "Caribou Phase 2 Snapshot CLOSED (low turnout ~4 votes; outcome to confirm)"
     },
     {
-      "when": "Thu (this week)",
-      "what": "Funding-model restructure discussion (streams → per-task) — principals to weigh in"
+      "when": "Sep 8 (live)",
+      "what": "Funding-model restructure Snapshot OPEN (streams → per-task) — community vote in progress"
     },
     {
       "when": "Thu (weekly)",
