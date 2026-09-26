@@ -1,45 +1,45 @@
 {
-  "generated": "2026-09-02 09:30 CT",
+  "generated": "2026-09-26 16:15 CT",
   "projects": [
     {
       "name": "Quiver",
       "emoji": "🚁",
       "lead": "Erick · Alperen",
-      "phase": "Devkit phase — Houston flight ops. OA collision-avoidance tests 1–3 done (phantom ≤30m front-radar returns persist); test 4 (first steering test) gated on Zeynep's review. Remote ID: omnidirectional test is the last one",
-      "milestone": "Commercial: Thomas FILED the FAA declaration morning of Aug 28 — declaration approval is now the last gate before ICAO serials + registration + devkit sales. Aug 20 meetup attachments: Latch V1 + NIR camera V1 flew; Starlink camera stream kills the link (regulator suspected); dispenser untouched. Arch: HV-out + payload-side regulation; attachment interface due a redesign",
-      "blocker": "HOU GPS discriminator: both affected builds were Erick-configured; Julius's builds (more Ethernet HW active, incl. RID flights) are clean + Kestrel logs immaculate — config error now leads over RF (param diff → switch sourcing → shielding; scope purchase agreed, Keysight ~$600). Attachment-interface supplier link still dead",
+      "phase": "Devkit phase — OA sensor phase CLOSED (MR82 forward radar stays); tree-gap (8 m) + payload tests passed; AUTO phase (tests 3–5) cleared by Zeynep, pending a clear Houston-area test site. Task board live (issues #248–#264, paid per task in ARROW)",
+      "milestone": "Commercial: FAA returned the declaration asking for extras (incl. permanent Remote ID label) — Thomas sent everything back Sep 24; final approval = last gate before the store (plus CNC foam case inserts)",
+      "blocker": "OA sign-off needs a test site · GPS EMI: Erick ordering spectrum analyzer + near-field probes; Julius replicating the dropout (T-13) · bounty applicants heavy on AI-generated submissions — Erick now vets via Discord + onboarding",
       "status": "active",
-      "updated": "2026-08-27"
+      "updated": "2026-09-24"
     },
     {
       "name": "Spearhead",
       "emoji": "✈️",
       "lead": "Alperen · Zeynep",
-      "phase": "FIRST FLIGHT ACHIEVED (confirmed Sep 8 Quiver call — Erick congratulated Alperen; flight details/duration/behaviour still pending). PT1 flew wings-off + skinless on KDE fallback motors. Awaiting the Spearhead transcript for specifics",
-      "milestone": "Connector architecture LOCKED (Aug 27 call): QS8 battery→Matek PDB, XT90-F live side, XT60 FC power, tail converter own HV run, 2× PWM breakouts → 1 CAN when MAD motors land, soldered sense harness. Resolved: wings-off first flight (both leads), PCB-mount XT physically impossible (soldered cables = intent), skin salvage works (~1mo printing saved)",
-      "blocker": "Repaired RC stick unverified in sim · new XT60W 3-pin ESC connectors team-untested across all 4 motors · MAD motor parcel still stuck in Poland (DHL storage charge; KDE fallback flying)",
+      "phase": "Flying: first flight (Thomas piloted), yaw imbalance ~400–500 PWM → ~250 after stiffening; Sep 19–20 four flights incl. FIRST WITH WINGS. PT1.5 prep for transition (skins, wing servos, tail electronics, 2nd GPS) — transition attempts after the Germany meetup (~2 wks)",
+      "milestone": "Sep 25 decision: electric config = secondary Longshot in the gas-tank bay wired direct to the pusher (no swappable pusher hat). Erick designing PT2 boards (tail→main→battery, Pix32 FC); first PT2 likely electric; custom Longshot 14S3P pack targeted for Nov",
+      "blocker": "Here4 CAN dropout · PT2 design waits on transition-flight learnings · Alperen owes battery/charging requirements list",
       "status": "active",
-      "updated": "2026-09-08"
+      "updated": "2026-09-25"
     },
     {
       "name": "Caribou",
       "emoji": "🛗",
       "lead": "Julius",
-      "phase": "Phase 1 ENDED Jul 31 — PT1 assembled; Phase 2 Snapshot CLOSED Sep 1 (low turnout ~4 votes; outcome to confirm). German LBA site-approval application SUBMITTED (jfw operator, untethered fast-track, ~a few weeks)",
-      "milestone": "Phase 2 (4 steps): PT1 flight campaign → PT1.5 build in USA (T40 bays) → PT1 retrofit → community-build docs · Docs split: Erick updates electrical-architecture doc (Vector fills gaps), Julius publishes operator's manual",
-      "blocker": "First flight gated on LBA authorization (application submitted) · RID scanner purchase (#57) open · fence-param conformity record before first flight",
+      "phase": "Phase 2 — PT1.5 design underway: welded steel inner frame → 60 mm carbon-tube sandwich with printed-aluminum end adapters (goal ~40 kg lighter), two DJI ag-tank bays as universal payload mounts, electronics unchanged",
+      "milestone": "PT1.5 build aimed for November · KBM quoting CNC/PEEK folding connectors",
+      "blocker": "PT1 first flight still gated on LBA authorization · centre landing-gear support + weight estimate to confirm",
       "status": "active",
-      "updated": "2026-08-25"
+      "updated": "2026-09-22"
     },
     {
       "name": "AIP-009 Store",
       "emoji": "🛒",
       "lead": "Thomas · Vector",
-      "phase": "On-chain settlement live on Base Sepolia — full-stack USDC E2E passed. FAA declaration FILED Aug 28 (approval = last gate) → then ICAO serials + registration + real devkit sales",
+      "phase": "On-chain settlement live on Base Sepolia (full-stack USDC E2E passed). FAA asked for additions (Remote ID label) — resubmitted Sep 24; final approval → ICAO serials + registration + real devkit sales",
       "milestone": "Checkout UI done (connect→approve→settle→receipt) · purchase-flow redesign in review (arrow-store #10, waterWang) · Dock V0 starting under Javelina Propeller Laboratory (RTK trough-landing gate; leg-contact charging, Longshot-compatible)",
-      "blocker": "Production DAO fee bounds undecided (catalog 20% devkit vs 0% propellers — question with Erick)",
+      "blocker": "FAA final approval · transport-case foam inserts (waiting on CNC) · production DAO fee bounds undecided",
       "status": "active",
-      "updated": "2026-08-27"
+      "updated": "2026-09-24"
     },
     {
       "name": "Flight Tracking v2",
@@ -57,9 +57,9 @@
       "lead": "Julius",
       "phase": "PT1 COMPLETE (Aug 29) — first custom 21700 pack (14S9P, 126 cells, BAK 65E) built; final weight locked 11.2 kg with ~2,540 Wh usable (+59% vs Tattu 4.0's ~1,596 Wh at ~same mass)",
       "milestone": "Full weight table + property comparison in longshot #26 (reopened for itemization convergence, ~364 g unaccounted: fuse/wiring/screws/sensors/clip/feet). Note: Longshot = standard Li-ion (58.8V full) vs Tattu LiHV (~60.9V) — chargers/docks must handle both. BMS v0 dummy → v1 STM32 smart next",
-      "blocker": "Further work paused while Caribou occupies Julius",
-      "status": "parked",
-      "updated": "2026-08-29"
+      "blocker": "Next pack: Spearhead custom 14S3P (~19.5 Ah, ~4 kg, AS150U) for Nov; BMS via contractor · cross-project (Spearhead→Longshot) payment has no precedent",
+      "status": "active",
+      "updated": "2026-09-21"
     },
     {
       "name": "Arrow Spreader (Javelina)",
@@ -75,75 +75,79 @@
   "actions": [
     {
       "owner": "Thomas",
-      "item": "Decide receipt-NFT design + greenlight arrow-store/arrow-catalog PRs (USDC flow done)",
+      "item": "Get FAA final approval (resubmitted Sep 24 w/ Remote ID label) → CNC foam case inserts → open the store",
       "due": "open",
       "where": "AIP-009 Store"
     },
     {
       "owner": "Erick",
-      "item": "Production DAO fee bounds (20% devkit vs 0% propellers data points)",
-      "due": "open",
-      "where": "AIP-009 Store"
-    },
-    {
-      "owner": "Erick",
-      "item": "Set QGB-02 (OA bounty #203) scope/split — two contributor PRs now open (#246 mahmudsudo docs/native-SITL, #247 karanp0202 test-kit); #247 also needs CLA signed",
-      "due": "open",
+      "item": "Find a clear Houston-area site for OA AUTO phase; backyard dense-environment test",
+      "due": "next week",
       "where": "Quiver"
     },
     {
-      "owner": "Thomas",
-      "item": "CoinGecko resubmit after Aug 20 (14-day cooldown) with clean GoPlus console — or $199 manual review to clear the proxy flag sooner",
-      "due": "Aug 20",
-      "where": "Token"
-    },
-    {
-      "owner": "Erick",
-      "item": "Scope + order meetup attachment build parts (gap flagged Jul 27)",
-      "due": "open",
-      "where": "Quiver"
-    },
-    {
-      "owner": "Erick",
-      "item": "HOU GPS: Ethernet-switch disconnect test to confirm RF-noise root cause (0 sats w/ switches vs ~20); standoffs/PETG lid if confirmed",
-      "due": "this week",
-      "where": "Quiver"
-    },
-    {
-      "owner": "Erick",
-      "item": "Post meetup attachment info notes + GitHub uploads (Latch V1, NIR camera V1)",
+      "owner": "Zeynep",
+      "item": "Send Julius's updated params; draft dense-environment param set for docs",
       "due": "open",
       "where": "Quiver"
     },
     {
       "owner": "Julius",
-      "item": "Caribou SORA: fill jfw identity fields + signatures → submit to LBA (package otherwise submission-ready)",
+      "item": "GPS dropout replication (T-13 GPS/Ethernet)",
       "due": "open",
-      "where": "Caribou"
+      "where": "Quiver"
+    },
+    {
+      "owner": "Erick",
+      "item": "Review Goridar (Lagos) devkit-loan partnership ask (2 devkits)",
+      "due": "open",
+      "where": "Quiver"
     },
     {
       "owner": "Alperen",
-      "item": "Clear MAD motor parcel out of Poland (DHL storage-charge invoice) — KDE fallback flying the Aug 28–31 weekend meanwhile",
+      "item": "Finish PT1.5 (skins, wing servos, tail electronics, 2nd GPS, servo power rewire) before Germany; send battery/charging requirements list",
+      "due": "pre-Germany",
+      "where": "Spearhead"
+    },
+    {
+      "owner": "Erick",
+      "item": "PT2 boards: tail (~half done) → main → battery",
       "due": "open",
       "where": "Spearhead"
     },
     {
-      "owner": "Alperen + Zeynep",
-      "item": "ESC extended-lead bench test (boom-mount compromise)",
-      "due": "open",
-      "where": "Spearhead"
+      "owner": "Julius",
+      "item": "Continue PT1.5 design; confirm weight; add centre landing-gear support",
+      "due": "Nov build",
+      "where": "Caribou"
     },
     {
       "owner": "Erick + Thomas",
-      "item": "Attachment-interface replacement sourcing (supplier link dead)",
+      "item": "Post-Sept funding: treasury ARROW→USDC swap (raised in multisig Sep 21)",
       "due": "open",
-      "where": "Quiver"
+      "where": "Treasury"
+    },
+    {
+      "owner": "Thomas",
+      "item": "CoinGecko resubmit with clean GoPlus console (or $199 manual review)",
+      "due": "open",
+      "where": "Token"
+    },
+    {
+      "owner": "Erick",
+      "item": "Production DAO fee bounds (20% devkit vs 0% propellers)",
+      "due": "open",
+      "where": "AIP-009 Store"
     }
   ],
   "governance": [
     {
-      "item": "Funding model restructure — Erick's proposal + August progress report PUBLISHED; Snapshot now LIVE (Sep 8). Monthly streams END after July+Aug payout → September moves to per-task / pay-on-completion, Erick assigns work proactively. Task list → GitHub issues this week. Community vote open",
+      "item": "Funding restructure / Sept–Nov Snapshot PASSED (closed Sep 11) — no Sept streams; work paid per task/retro in ARROW via the GitHub task board. Aug retro 6,750 ARROW executed Sep 9. Post-Sept funding needs a treasury ARROW→USDC swap",
       "state": "active"
+    },
+    {
+      "item": "Super app / specs.arrowair.com concept (Thomas demo Sep 18) — open question: own discussion DB vs GitHub Discussions",
+      "state": "draft"
     },
     {
       "item": "Caribou Phase 2 — Snapshot CLOSED Sep 1 (ran low-turnout ~4 votes); on-chain outcome to confirm",
@@ -154,7 +158,7 @@
       "state": "quiet"
     },
     {
-      "item": "$ARROW live: V4 LP since Jul 21 (~$0.19) · CoinGecko resubmit window now OPEN (Aug 20 cooldown elapsed) — pending clean GoPlus console (proxy flag) before re-filing; $199 manual-review is the fallback lever",
+      "item": "$ARROW live: V4 LP since Jul 21 (spot ~$0.195 Sep 24) · ~53.4K ARROW in pending OP→L1 withdrawals landing ~Sep 29–Oct 2 · CoinGecko resubmit pending clean GoPlus console",
       "state": "draft"
     },
     {
@@ -174,95 +178,95 @@
       "state": "quiet"
     },
     {
-      "item": "OA/Quiver funding proposal PUBLISHED (Sep 8) — folded into Erick's funding-restructure Snapshot after a 3+ week slip; the roadmap Thomas asked for Aug 4 is now on the ballot",
-      "state": "active"
+      "item": "OA/Quiver funding proposal — passed as part of the Sept–Nov Snapshot (closed Sep 11)",
+      "state": "quiet"
     }
   ],
   "pulse": [
     {
       "repo": "project-quiver",
-      "pr": 246,
-      "title": "QGB-02: fix stale SF45B-proxy SITL guidance → native sim:rplidars2 (reviewed, endorsed)",
+      "pr": 270,
+      "title": "T-05 m1 milestones (Attachment Dev Guide)",
       "author": "mahmudsudo",
-      "age": "2d"
+      "age": "3d"
     },
     {
       "repo": "project-quiver",
-      "pr": 247,
-      "title": "QGB-02: OA test kit + Texas-baseline params + analysis tools (reviewed; CLA + scope open)",
-      "author": "karanp0202",
-      "age": "2d"
-    },
-    {
-      "repo": "flight-tracking",
-      "pr": 3,
-      "title": "v2.3: .param download + aircraft-page durations",
+      "pr": 267,
+      "title": "CAD/BOM: Here4 and Holybro NEO-F9P primary GPS options; retire Wren",
       "author": "thomasgarrison",
-      "age": "11d"
-    },
-    {
-      "repo": "flight-tracking",
-      "pr": 2,
-      "title": "v2.2: feedback round 2 — durations, deletes, profile, weather guard",
-      "author": "thomasgarrison",
-      "age": "13d"
-    },
-    {
-      "repo": "flight-tracking",
-      "pr": 1,
-      "title": "v2.1: feedback round 1 — auth, admin, filters, param viewer",
-      "author": "thomasgarrison",
-      "age": "13d"
-    },
-    {
-      "repo": "arrow-store",
-      "pr": 10,
-      "title": "feat: purchase flow with card + USDC on-chain payment paths",
-      "author": "waterWang",
-      "age": "17d"
+      "age": "7d"
     },
     {
       "repo": "project-quiver",
-      "pr": 245,
-      "title": "Add payload-side clip plate STEP; point attachments to payload-systems",
+      "pr": 266,
+      "title": "CAD: sync verified mechanical changes from Fusion v148",
       "author": "thomasgarrison",
-      "age": "13d"
+      "age": "7d"
+    },
+    {
+      "repo": "project-quiver",
+      "pr": 244,
+      "title": "docs: remove dead Pixhawk log links from PT1 flight test reports",
+      "author": "thomasgarrison",
+      "age": "1d"
     },
     {
       "repo": "project-quiver",
       "pr": 232,
       "title": "V1 of Quiver initial configuration document",
       "author": "errrks",
-      "age": "12d"
+      "age": "4d"
+    },
+    {
+      "repo": "project-quiver",
+      "pr": 246,
+      "title": "docs: fix stale SF45B-proxy guidance → native sim:rplidars2 (QGB-02; bounty went to Erick+Zeynep)",
+      "author": "mahmudsudo",
+      "age": "16d"
+    },
+    {
+      "repo": "arrow-store",
+      "pr": 10,
+      "title": "feat: purchase flow with card + USDC on-chain payment paths",
+      "author": "waterWang",
+      "age": "49d"
+    },
+    {
+      "repo": "project-quiver",
+      "pr": 245,
+      "title": "Add payload-side clip plate STEP; point attachments to payload-systems",
+      "author": "thomasgarrison",
+      "age": "51d"
     }
   ],
   "calendar": [
     {
-      "when": "Aug 28 (done)",
-      "what": "FAA declaration FILED — approval still pending; it's the last gate before devkit sales"
+      "when": "Sep 24 (done)",
+      "what": "FAA additions (Remote ID label) sent back — awaiting final approval"
     },
     {
-      "when": "Aug 31 (flew ✅)",
-      "what": "Spearhead FIRST FLIGHT achieved (wings-off + skinless) — confirmed Sep 8; flight details still pending"
+      "when": "~Sep 29–Oct 2",
+      "what": "~53.4K ARROW OP→L1 withdrawals land (watch V4 pool)"
     },
     {
-      "when": "Sep 1 (done)",
-      "what": "Caribou Phase 2 Snapshot CLOSED (low turnout ~4 votes; outcome to confirm)"
+      "when": "~early Oct",
+      "what": "Germany meetup → Spearhead transition-flight attempts"
     },
     {
-      "when": "Sep 8 (live)",
-      "what": "Funding-model restructure Snapshot OPEN (streams → per-task) — community vote in progress"
+      "when": "~Oct 14",
+      "what": "Turkey meetup (Erick attending ~1 week)"
     },
     {
       "when": "Thu (weekly)",
       "what": "Quiver call"
     },
     {
-      "when": "Imminent",
-      "what": "Caribou PT1 first flight (gated on LBA authorization)"
+      "when": "Nov",
+      "what": "Caribou PT1.5 build · Spearhead Longshot 14S3P pack · possible US Spearhead build"
     }
   ],
   "treasury": {
-    "note": "$ARROW/USDC V4 LP live since Jul 21 (~$0.19, ~$45K/side) · ArrowSettlement on Base Sepolia (testnet) — mainnet + AIP-009 revenue counter after Thomas signs off"
+    "note": "$ARROW/USDC V4 LP live since Jul 21 (spot ~$0.195 Sep 24; 21.9K ARROW sell Sep 22) · ~53.4K ARROW pending OP→L1 withdrawals · ArrowSettlement on Base Sepolia (testnet) — mainnet after Thomas signs off"
   }
 }
