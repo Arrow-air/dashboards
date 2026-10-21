@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12 13:55 CT",
+  "generated": "2026-10-21 16:15 CT",
   "projects": [
     {
       "name": "Quiver",
@@ -15,21 +15,21 @@
       "name": "Spearhead",
       "emoji": "✈️",
       "lead": "Alperen · Zeynep",
-      "phase": "PT1.5 build in Alperen's tent (servos, pushrods, skins, electronics). Group arrives Ankara ~Oct 13; PT1.5 transition flights ~Oct 15–16. Aero DB rerun for the 28 cm tail (pitching moment relieved → bigger CG envelope); Zeynep building an initial transition param set",
-      "milestone": "PT2 slipped Nov → Dec. PCBs: tail done, main in progress (2 payloads, Quiver push-button pre-charge), battery connector next → all ordered ~late Nov. Longshot Spearhead edition + BMS ~1 month, possibly built in Texas (Thomas + Julius)",
-      "blocker": "Pusher motor open: KDE likely overheats, MAD preferred (Zeynep bringing one + ESC), İzmir maker lead · 3-blade props dropped (KDE: motors may fail at 12S); spare 2-blade props backordered to ~year end · electronics may not be done before the group arrives",
+      "phase": "PT1.5 tested at the Ankara meetup: last-day hover sank even at 100% throttle (~2.3 m/s landing, mud absorbed it, no major airframe damage). No single cause — motor saturation + CW/CCW yaw imbalance, ~8.2 V sag (cold pack, almost no ground run), +4.5–5 kg on already-underpowered KDE lift motors",
+      "milestone": "Decided Oct 21 (Option C): Alperen brings the MAD motors + ESCs to Turkey after his US trip, swaps them in and reflies late Nov (may add a more capable KDE pusher for transition). PT2 continues in parallel — PCB work started, main tubes likely 30 mm sq × 2 m pending transition data; PT2 build Dec. Documentation sprint: Alperen's doc list Fri Oct 23, then daily agent cross-check iterations. Zeynep's FDM/SITL/Flight Deck update up as PR #31",
+      "blocker": "Option C depends on getting the motors through customs · yaw-imbalance root cause unconfirmed (boom bending vs worn motors/ESCs) · documentation ~2 months behind, agents holding inconsistent assumptions",
       "status": "active",
-      "updated": "2026-10-05"
+      "updated": "2026-10-21"
     },
     {
       "name": "Caribou",
       "emoji": "🛗",
       "lead": "Julius",
-      "phase": "Phase 2 / PT1.5: chassis fixed (partly disassembled), CNC-machined tube connectors in manufacturing (maybe next week), CF sandwich panels being finalized; pre-November work filed as issues #58–66 (KBM: landing gear #60)",
-      "milestone": "PT1.5 build around the November US meetup · Sept progress report drafted",
-      "blocker": "PT1 operation still gated on LBA authorization (submitted Aug 18, no news as of Oct 7) · tuning changes need a flight test",
+      "phase": "Phase 2 / PT1.5: CBC PCB PT1.5 (precharge ground fix, precharge/HV-bus sensing, buzzer) integrated in PR #71 (Oct 21) — Julius: order for the Texas build placed (#58 closed). CBC firmware v0.1.0 + standard param file merged Oct 15. Chassis partly disassembled, CNC tube connectors + CF sandwich panels in progress; pre-November work in issues #58–68 (KBM: landing gear #60)",
+      "milestone": "PT1.5 build around the November US meetup · fastener sourcing (US McMaster / EU Würth) list sent to Julius Oct 17 · CMAIN CAN connector layout revision (#68)",
+      "blocker": "PR #71 KiCad ERC/DRC not yet run (pending Julius) · PT1 operation still gated on LBA authorization (submitted Aug 18, no news as of Oct 7) · tuning changes need a flight test",
       "status": "active",
-      "updated": "2026-10-07"
+      "updated": "2026-10-21"
     },
     {
       "name": "AIP-009 Store",
@@ -55,11 +55,11 @@
       "name": "Longshot",
       "emoji": "🔋",
       "lead": "Julius",
-      "phase": "PT1 COMPLETE (Aug 29) — 14S9P 21700 pack (126× BAK 65E), 11.2 kg, ~2,540 Wh usable (+59% vs Tattu 4.0 at ~same mass). Parametric build123d model + generated BOM merged Oct 10 (longshot #27)",
+      "phase": "PT1 COMPLETE (Aug 29) — 14S9P 21700 pack (126× BAK 65E), 11.2 kg, ~2,540 Wh usable (+59% vs Tattu 4.0 at ~same mass). build123d model + BOM merged Oct 10 (#27); PT1 build photos (#29/#30) and updated SL_PCB KiCad project (#31, Oct 19) merged",
       "milestone": "Next: Spearhead edition (~1 month incl. BMS; PT2 likely 14S ~20 Ah), possibly built in Texas with Thomas learning the build · Julius has a BMS dev kit · GEODNET founder interested in building batteries under Arrow terms (bond ARROW, DAO cut per pack) — Thomas to meet first",
       "blocker": "BMS not started beyond dev kit · battery-connector PCB interface (Erick ↔ Julius) not yet discussed · cross-project (Spearhead→Longshot) payment has no precedent",
       "status": "active",
-      "updated": "2026-10-10"
+      "updated": "2026-10-19"
     },
     {
       "name": "Arrow Spreader (Javelina)",
@@ -122,9 +122,27 @@
       "where": "Longshot"
     },
     {
-      "owner": "Alperen · Zeynep",
-      "item": "Finish PT1.5 (servos, skins, electronics); Zeynep: initial transition param set + bring MAD motor/ESC to Ankara",
-      "due": "~Oct 13",
+      "owner": "Alperen",
+      "item": "Check with customs broker; bring MAD motors + ESCs to Turkey after the US trip, swap in and refly PT1.5; consider a more capable KDE pusher",
+      "due": "late Nov",
+      "where": "Spearhead"
+    },
+    {
+      "owner": "Alperen",
+      "item": "List needed Spearhead documents → week of daily doc iterations with agents cross-checking",
+      "due": "Fri Oct 23",
+      "where": "Spearhead"
+    },
+    {
+      "owner": "Erick",
+      "item": "Send Alperen his Spearhead documentation so far",
+      "due": "open",
+      "where": "Spearhead"
+    },
+    {
+      "owner": "Alperen · Thomas",
+      "item": "PT2 fuselage/assembly sketches; Thomas orders PT2 tubes (incl. ~10/20 mm round) once sizes settle",
+      "due": "after transition data",
       "where": "Spearhead"
     },
     {
@@ -135,7 +153,7 @@
     },
     {
       "owner": "Julius · KBM",
-      "item": "Reassemble Caribou; finish CF sandwich panels; publish Sept report; KBM: PT1.5 landing gear (#60)",
+      "item": "Run KiCad ERC/DRC on CBC PT1.5 PR #71; reassemble Caribou; finish CF sandwich panels; KBM: PT1.5 landing gear (#60)",
       "due": "Nov build",
       "where": "Caribou"
     },
@@ -162,6 +180,10 @@
       "state": "active"
     },
     {
+      "item": "Hardware licensing: CERN-OHL-S v2 license merged in Caribou (#67) and Longshot (#28) Oct 15; Spearhead #30 open",
+      "state": "active"
+    },
+    {
       "item": "Caribou Phase 2 — Snapshot PASSED Sep 1 (100% For, 6 votes, ~3.47M)",
       "state": "quiet"
     },
@@ -170,7 +192,7 @@
       "state": "quiet"
     },
     {
-      "item": "$ARROW: V4 LP live since Jul 21 (spot ~$0.164 Oct 2) · all OP→L1 withdrawals landed — none pending as of Oct 12 · CoinGecko resubmit pending clean GoPlus console",
+      "item": "$ARROW: V4 LP live since Jul 21 (spot ~$0.164 Oct 2) · bridge clear: L1 escrow = L2 supply = 23,370,201.59 ARROW, no pending withdrawals · CoinGecko resubmit pending clean GoPlus console",
       "state": "draft"
     },
     {
@@ -196,74 +218,81 @@
   ],
   "pulse": [
     {
+      "repo": "project-caribou",
+      "pr": 71,
+      "title": "feat(cbc): integrate PT1.5 CBC PCB update for the US build",
+      "author": "vector-arrow",
+      "age": "0d"
+    },
+    {
+      "repo": "project-spearhead",
+      "pr": 31,
+      "title": "PT1 / PT1.5 flight dynamics: FDM update, ArduPilot SITL and Flight Deck",
+      "author": "ZeynepB5793",
+      "age": "6d"
+    },
+    {
+      "repo": "project-spearhead",
+      "pr": 30,
+      "title": "docs: add CERN-OHL-S v2 license",
+      "author": "thomasgarrison",
+      "age": "9d"
+    },
+    {
       "repo": "project-quiver",
       "pr": 276,
       "title": "docs: SDK guide network map and CubeNode addressing, Ethernet note banner",
       "author": "errrks",
-      "age": "11d"
+      "age": "20d"
     },
     {
       "repo": "project-quiver",
       "pr": 275,
       "title": "docs: Dev-Kit Engineering Report corrections ER1 to ER10",
       "author": "errrks",
-      "age": "11d"
+      "age": "20d"
     },
     {
       "repo": "project-quiver",
       "pr": 274,
       "title": "docs: Pilot's Handbook first pass and First Flight Checklist",
       "author": "errrks",
-      "age": "12d"
+      "age": "21d"
     },
     {
       "repo": "project-quiver",
       "pr": 273,
-      "title": "params: 4.8 arming check name, MR82 proximity instance, metric names, FC TCP server",
+      "title": "params: 4.8 arming check name, MR82 proximity instance, metric parameter names, FC TCP server",
       "author": "errrks",
-      "age": "12d"
+      "age": "21d"
     },
     {
       "repo": "project-spearhead",
       "pr": 29,
       "title": "Reconstruct Spearhead from Fusion with Build123D and interactive review viewer",
       "author": "thomasgarrison",
-      "age": "15d"
+      "age": "24d"
     },
     {
       "repo": "project-quiver",
       "pr": 270,
-      "title": "T-05 m1 milestones (Attachment Dev Guide)",
+      "title": "T-05 m1 milestones",
       "author": "mahmudsudo",
-      "age": "19d"
+      "age": "28d"
     },
     {
-      "repo": "website",
-      "pr": 250,
-      "title": "fix: make npm run typecheck pass on TypeScript 7",
+      "repo": "project-quiver",
+      "pr": 266,
+      "title": "CAD: sync verified mechanical changes from Fusion v148",
       "author": "thomasgarrison",
-      "age": "10d"
-    },
-    {
-      "repo": "project-quiver",
-      "pr": 232,
-      "title": "V1 of Quiver initial configuration document",
-      "author": "errrks",
-      "age": "95d"
-    },
-    {
-      "repo": "project-quiver",
-      "pr": 246,
-      "title": "docs: fix stale SF45B-proxy guidance → native sim:rplidars2",
-      "author": "mahmudsudo",
-      "age": "43d"
+      "age": "32d"
     },
     {
       "repo": "arrow-store",
       "pr": 10,
       "title": "feat: purchase flow with card + USDC on-chain payment paths",
       "author": "waterWang",
-      "age": "65d"
+      "age": "74d"
     }
   ],
   "calendar": [
@@ -272,12 +301,12 @@
       "what": "FAA additions sent back — awaiting final approval"
     },
     {
-      "when": "~Oct 13",
-      "what": "Ankara (Turkey) meetup — Spearhead PT1.5 on site"
+      "when": "mid-Oct (done)",
+      "what": "Ankara meetup — Spearhead PT1.5 hover sank at full throttle; Oct 21 call chose Option C"
     },
     {
-      "when": "~Oct 15–16",
-      "what": "Spearhead PT1.5 transition flights"
+      "when": "Fri Oct 23",
+      "what": "Alperen's Spearhead document list → daily documentation sprint"
     },
     {
       "when": "Weekly",
@@ -285,14 +314,18 @@
     },
     {
       "when": "Nov",
-      "what": "US meetup (Caribou focus) · Caribou PT1.5 build"
+      "what": "US meetup (Caribou focus) · Caribou PT1.5 build (CBC PT1.5 boards ordered)"
     },
     {
-      "when": "late Nov → Dec",
-      "what": "Spearhead PT2 PCBs ordered → PT2 build"
+      "when": "late Nov",
+      "what": "Spearhead PT1.5 reflight in Turkey with MAD motors + ESCs · PT2 PCBs ordered"
+    },
+    {
+      "when": "Dec",
+      "what": "Spearhead PT2 build"
     }
   ],
   "treasury": {
-    "note": "$ARROW/USDC V4 LP live since Jul 21 (~$0.164 Oct 2; only small swaps) · OP→L1 bridge: no pending withdrawals (Oct 12) · ArrowSettlement on Base Sepolia (testnet) — mainnet after Thomas signs off"
+    "note": "$ARROW/USDC V4 LP live since Jul 21 (~$0.164 Oct 2; only small swaps) · OP→L1 bridge clear: L1 escrow = L2 supply = 23,370,201.59 ARROW · ArrowSettlement on Base Sepolia (testnet) — mainnet after Thomas signs off"
   }
 }
